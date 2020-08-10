@@ -1,1 +1,1 @@
-# Eatzy - makes your life easy. 
+# Eatzy - makes your life easy!
