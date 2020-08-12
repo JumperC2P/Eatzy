@@ -30,11 +30,11 @@
             </objects>
             <point key="canvasLocation" x="-1310" y="-858"/>
         </scene>
-        <!--Item-->
+        <!--Generate-->
         <scene sceneID="N9d-7v-Cbt">
             <objects>
                 <navigationController id="hlq-3P-WkW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="fQw-VO-gzH"/>
+                    <tabBarItem key="tabBarItem" title="Generate" image="kitchen" landscapeImage="kitchen" largeContentSizeImage="kitchen" selectedImage="kitchen" id="fQw-VO-gzH"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gUR-pw-Wda">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -97,7 +97,7 @@
             </objects>
             <point key="canvasLocation" x="-1730" y="753"/>
         </scene>
-        <!--My Favorites-->
+        <!--My Favourite-->
         <scene sceneID="bH8-sY-NEK">
             <objects>
                 <viewController id="ueF-sl-jJK" sceneMemberID="viewController">
@@ -116,13 +116,13 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <viewLayoutGuide key="safeArea" id="0nN-3C-yJO"/>
                     </view>
-                    <navigationItem key="navigationItem" title="My Favorites" id="40M-SA-yT2"/>
+                    <navigationItem key="navigationItem" title="My Favourite" id="40M-SA-yT2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fZd-5p-mSe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-759" y="753"/>
         </scene>
-        <!--About Eatzy-->
+        <!--Profile-->
         <scene sceneID="qGJ-oj-qXb">
             <objects>
                 <viewController id="EBj-5y-ebm" sceneMemberID="viewController">
@@ -141,17 +141,17 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="rxU-b1-AQP"/>
                     </view>
-                    <navigationItem key="navigationItem" title="About Eatzy" id="9km-mb-rbP"/>
+                    <navigationItem key="navigationItem" title="Profile" id="9km-mb-rbP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wdT-7L-0LN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="216" y="753"/>
         </scene>
-        <!--Item-->
+        <!--Grocery-->
         <scene sceneID="vf8-fG-3sb">
             <objects>
                 <navigationController id="daM-OU-P1b" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="bRb-ar-Rsn"/>
+                    <tabBarItem key="tabBarItem" title="Grocery" image="checklist" landscapeImage="checklist" selectedImage="checklist" id="bRb-ar-Rsn"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="W9r-Rd-wba">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -164,11 +164,11 @@
             </objects>
             <point key="canvasLocation" x="-1729" y="-68"/>
         </scene>
-        <!--Item-->
+        <!--Profile-->
         <scene sceneID="wIF-QJ-QbK">
             <objects>
                 <navigationController id="ZBP-h2-xAE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="2w9-gz-xB5"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile" landscapeImage="profile" largeContentSizeImage="profile" selectedImage="profile" id="2w9-gz-xB5"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wu2-tO-4c2">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -181,11 +181,11 @@
             </objects>
             <point key="canvasLocation" x="217" y="-68"/>
         </scene>
-        <!--Item-->
+        <!--Favourite-->
         <scene sceneID="Ade-Oe-WqH">
             <objects>
                 <navigationController id="JUY-Pn-OhL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="M8L-cf-5Ld"/>
+                    <tabBarItem key="tabBarItem" title="Favourite" image="favorite-select" landscapeImage="favorite-select" largeContentSizeImage="favorite-select" selectedImage="favorite-select" id="M8L-cf-5Ld"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eMD-i4-le9">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -199,4 +199,10 @@
             <point key="canvasLocation" x="-759" y="-68"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="checklist" width="14" height="16.5"/>
+        <image name="favorite-select" width="16.5" height="14"/>
+        <image name="kitchen" width="21" height="21"/>
+        <image name="profile" width="16.5" height="16.5"/>
+    </resources>
 </document>
