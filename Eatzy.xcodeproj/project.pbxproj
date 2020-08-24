@@ -28,9 +28,9 @@
 		5EAF0A6524D262F600483E09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EAF0A6824D262F600483E09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EAF0A6A24D262F600483E09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		89778E9924F4218C0025EE40 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = SOURCE_ROOT; };
+		89778E9924F4218C0025EE40 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Profile.storyboard; path = Eatzy/Models/Profile.storyboard; sourceTree = SOURCE_ROOT; };
 		89778E9C24F422190025EE40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Favorites.storyboard; sourceTree = "<group>"; };
-		89778E9E24F4224E0025EE40 /* GroceryList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GroceryList.storyboard; sourceTree = SOURCE_ROOT; };
+		89778E9E24F4224E0025EE40 /* GroceryList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = GroceryList.storyboard; path = Eatzy/Views/GroceryList.storyboard; sourceTree = SOURCE_ROOT; };
 		89778EA124F4227F0025EE40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/EatzyChef.storyboard; sourceTree = "<group>"; };
 		89778EA524F424E20025EE40 /* Recipes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Recipes.storyboard; sourceTree = "<group>"; };
 		89778EA724F424EF0025EE40 /* RecipesInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RecipesInfo.storyboard; sourceTree = "<group>"; };
@@ -81,10 +81,10 @@
 		89778E9424F41DCF0025EE40 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				89778EA324F422880025EE40 /* Recipes */,
-				89778E9E24F4224E0025EE40 /* GroceryList.storyboard */,
-				89778E9B24F422190025EE40 /* Favorites.storyboard */,
 				89778E9924F4218C0025EE40 /* Profile.storyboard */,
+				89778E9E24F4224E0025EE40 /* GroceryList.storyboard */,
+				89778EA324F422880025EE40 /* Recipes */,
+				89778E9B24F422190025EE40 /* Favorites.storyboard */,
 				5EAF0A6224D262F400483E09 /* Main.storyboard */,
 			);
 			path = Views;
