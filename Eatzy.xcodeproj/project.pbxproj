@@ -70,7 +70,6 @@
 				89778E9524F41DFC0025EE40 /* Models */,
 				89778E9424F41DCF0025EE40 /* Views */,
 				5EAF0A5E24D262F400483E09 /* AppDelegate.swift */,
-				5EAF0A6024D262F400483E09 /* ViewController.swift */,
 				5EAF0A6524D262F600483E09 /* Assets.xcassets */,
 				5EAF0A6724D262F600483E09 /* LaunchScreen.storyboard */,
 				5EAF0A6A24D262F600483E09 /* Info.plist */,
@@ -100,6 +99,7 @@
 		89778E9624F41E040025EE40 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				5EAF0A6024D262F400483E09 /* ViewController.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
