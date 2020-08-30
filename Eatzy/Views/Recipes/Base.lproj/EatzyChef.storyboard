@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iWe-nI-gz1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iWe-nI-gz1">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,27 +13,220 @@
         <!--Eatzy Chef-->
         <scene sceneID="1Fi-MS-Xoj">
             <objects>
-                <viewController id="iWe-nI-gz1" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="0ew-we-wMd">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                <viewController id="iWe-nI-gz1" customClass="PickerViewController" customModule="Eatzy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TmS-aX-dTR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start working here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ker-tW-S91">
-                                <rect key="frame" x="134" y="435" width="166" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="z1d-Vd-aTg">
+                                <rect key="frame" x="42.5" y="30" width="290" height="345"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AH2-1R-uez" customClass="RecipeViewController" customModule="GenerateRecipe">
+                                        <rect key="frame" x="0.0" y="0.0" width="290" height="100"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuisines:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bi-VV-bH6">
+                                                <rect key="frame" x="0.0" y="0.0" width="130" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="7IU-6K-4bO"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="uQu-Ed-uUT"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldItalicMT" family="Times New Roman" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w1d-Pp-Nu4">
+                                                <rect key="frame" x="130" y="0.0" width="160" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="5bD-qT-1t2"/>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="6W4-8q-VGA"/>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="160" id="Huv-TQ-FZi"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="eGr-Cp-AFe"/>
+                                                </constraints>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <exclude reference="6W4-8q-VGA"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <exclude reference="6W4-8q-VGA"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <exclude reference="6W4-8q-VGA"/>
+                                                    </mask>
+                                                </variation>
+                                            </pickerView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LH1-EE-aYB">
+                                        <rect key="frame" x="0.0" y="105" width="290" height="100"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diets:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJs-46-8Za">
+                                                <rect key="frame" x="0.0" y="0.0" width="130" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="6WF-2o-wwi"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="V9d-01-WXK"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldItalicMT" family="Times New Roman" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j4k-jC-q0p">
+                                                <rect key="frame" x="130" y="0.0" width="160" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="0In-re-8kZ"/>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="EzA-Qq-skV"/>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="160" id="YK5-BI-BGh"/>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="uO1-z8-ZBS"/>
+                                                </constraints>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <exclude reference="EzA-Qq-skV"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <exclude reference="EzA-Qq-skV"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <exclude reference="EzA-Qq-skV"/>
+                                                    </mask>
+                                                </variation>
+                                            </pickerView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aAF-FL-ZTm">
+                                        <rect key="frame" x="0.0" y="210" width="290" height="100"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Types:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGX-3H-ncY">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="PGv-Mu-MNl"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldItalicMT" family="Times New Roman" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2kY-DJ-aQu">
+                                                <rect key="frame" x="130" y="0.0" width="160" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="Uwh-U8-xhb"/>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="160" id="Zif-qE-Ug3"/>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="dHt-XZ-z7A"/>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="xnt-4K-ZaX"/>
+                                                </constraints>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <exclude reference="xnt-4K-ZaX"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <exclude reference="xnt-4K-ZaX"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <exclude reference="xnt-4K-ZaX"/>
+                                                    </mask>
+                                                </variation>
+                                            </pickerView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="Dqx-Fa-3LA">
+                                        <rect key="frame" x="0.0" y="315" width="290" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intolerances:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDm-PD-cYj">
+                                                <rect key="frame" x="0.0" y="0.0" width="110" height="30"/>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldItalicMT" family="Times New Roman" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5O6-Tx-PEl">
+                                                <rect key="frame" x="129" y="0.0" width="161" height="30"/>
+                                                <color key="backgroundColor" red="0.49328892289999998" green="0.73569317950000002" blue="0.72172116350000004" alpha="0.065714897260000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="G5O-85-CmG"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="VTa-lP-plc"/>
+                                                </constraints>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="Add">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Add">
+                                                            <attributes>
+                                                                <font key="NSFont" metaFont="system" size="24"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="G5O-85-CmG"/>
+                                                        <exclude reference="VTa-lP-plc"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="G5O-85-CmG"/>
+                                                        <include reference="VTa-lP-plc"/>
+                                                    </mask>
+                                                </variation>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9A-Hx-C7q">
+                                <rect key="frame" x="187" y="522" width="1" height="119"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="5pV-7Z-yvp">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="119"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="125" id="a9x-vn-gU0">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="137"/>
+                                    </constraint>
+                                </constraints>
+                                <state key="normal" backgroundImage="chef_button"/>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="7Pd-hs-VAL"/>
+                        <color key="backgroundColor" red="0.99143401019999999" green="0.97400232369999995" blue="0.97732373019999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="z1d-Vd-aTg" firstAttribute="centerX" secondItem="TmS-aX-dTR" secondAttribute="centerX" id="Vti-tZ-I7h">
+                                <variation key="heightClass=compact-widthClass=compact" constant="-87"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="-143"/>
+                            </constraint>
+                            <constraint firstItem="jxn-wc-fBC" firstAttribute="bottom" secondItem="q9A-Hx-C7q" secondAttribute="bottom" constant="20" id="lic-18-oqq">
+                                <variation key="heightClass=compact-widthClass=compact" constant="110"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="105"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="26"/>
+                            </constraint>
+                            <constraint firstItem="q9A-Hx-C7q" firstAttribute="centerX" secondItem="TmS-aX-dTR" secondAttribute="centerX" id="lke-6h-GXZ">
+                                <variation key="heightClass=compact-widthClass=compact" constant="176"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="217"/>
+                            </constraint>
+                            <constraint firstItem="z1d-Vd-aTg" firstAttribute="top" secondItem="jxn-wc-fBC" secondAttribute="top" constant="10" id="pZc-a2-snp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jxn-wc-fBC"/>
                     </view>
                     <navigationItem key="navigationItem" title="Eatzy Chef" id="YTO-Gd-Sj0"/>
+                    <connections>
+                        <outlet property="pickerCuisine" destination="w1d-Pp-Nu4" id="89j-KJ-VKD"/>
+                        <outlet property="pickerDiet" destination="j4k-jC-q0p" id="hx8-OB-sIP"/>
+                        <outlet property="pickerMealType" destination="2kY-DJ-aQu" id="O6h-ZE-L9f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PLq-gZ-v56" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2788.4057971014495" y="752.67857142857144"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Add" width="20" height="20"/>
+        <image name="chef_button" width="170.5" height="162"/>
+    </resources>
 </document>
