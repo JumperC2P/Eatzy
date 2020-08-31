@@ -190,6 +190,9 @@
                                     </constraint>
                                 </constraints>
                                 <state key="normal" backgroundImage="chef_button"/>
+                                <connections>
+                                    <segue destination="tsN-fs-FPl" kind="show" id="RS0-ML-s6p"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99143401019999999" green="0.97400232369999995" blue="0.97732373019999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -221,6 +224,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PLq-gZ-v56" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2788.4057971014495" y="752.67857142857144"/>
+        </scene>
+        <!--Recipes-->
+        <scene sceneID="EKZ-GR-Un0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Recipes" id="tsN-fs-FPl" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="bIC-AM-Owc"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y14-Mk-8W7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2179" y="752"/>
         </scene>
     </scenes>
     <resources>
