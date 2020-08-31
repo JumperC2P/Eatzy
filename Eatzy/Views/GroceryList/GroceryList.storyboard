@@ -221,7 +221,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.87585246890000001" green="0.87585246890000001" blue="0.87585246890000001" alpha="0.099942222669999997" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ciR-OO-xda" firstAttribute="centerY" secondItem="mjN-mh-vUZ" secondAttribute="centerY" id="5ds-5i-gRy"/>
                             <constraint firstItem="ciR-OO-xda" firstAttribute="centerX" secondItem="mjN-mh-vUZ" secondAttribute="centerX" id="Ryd-An-kLC"/>

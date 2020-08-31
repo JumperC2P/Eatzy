@@ -12,6 +12,13 @@ import Foundation
 struct Grocery {
     let name:String
     let amount:String
+    var complete:Bool
+    
+    init(name:String, amount:String) {
+        self.name = name
+        self.amount = amount
+        self.complete = false
+    }
 
 }
 

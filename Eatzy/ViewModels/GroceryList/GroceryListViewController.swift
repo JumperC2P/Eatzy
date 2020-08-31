@@ -42,10 +42,10 @@ class GroceryListViewController: UIViewController {
     }
     
 
-    var items:[Grocery] = [
-        Grocery(name: "Ground Beef", amount: "1 lb"),
-        Grocery(name: "Crushed Tomatoes", amount: "1 can")
-    ]
+//    var items:[Grocery] = [
+//        Grocery(name: "Ground Beef", amount: "1 lb"),
+//        Grocery(name: "Crushed Tomatoes", amount: "1 can")
+//    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,8 +63,8 @@ class GroceryListViewController: UIViewController {
         
         // allow multiple selection in table
         self.GroceryListView.allowsSelection = true;
-        self.GroceryListView.allowsMultipleSelection = true;
-        self.GroceryListView.allowsMultipleSelectionDuringEditing = true
+        self.GroceryListView.allowsMultipleSelection = false;
+//        self.GroceryListView.allowsMultipleSelectionDuringEditing = true
     }
     
     // segue for editing items, pass essential information
@@ -81,12 +81,12 @@ class GroceryListViewController: UIViewController {
 
     
     // ??????????
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete{
-            self.items.remove(at: indexPath.row)
-        
-        }
-    }
+//    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+//        if editingStyle == .delete{
+//            self.items.remove(at: indexPath.row)
+//
+//        }
+//    }
 
     
 }
@@ -100,10 +100,33 @@ extension GroceryListViewController:UITableViewDataSource{
     
     // content in each row
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let  cell = tableView.dequeueReusableCell(withIdentifier: "GroceryCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "GroceryCell", for: indexPath)
         let current = GroceryViewModel.getGroceryItem(byIndex: indexPath.row)
         cell.textLabel?.text = current.name
         cell.detailTextLabel?.text = current.amount
+//        cell.selectedBackgroundView = UIView()
+//        cell.selectedBackgroundView?.backgroundColor = #colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)
+//        cell.textLabel?.highlightedTextColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+//        if(cell.isSelected){
+//            let attrStr = NSMutableAttributedString.init(string: current.name)
+//            attrStr.addAttribute(NSAttributedString.Key.strikethroughStyle, value: NSNumber.init(value: 1), range: NSRange.init(location:0, length: current.name.count))
+//            cell.textLabel?.attributedText = attrStr
+//        }
+        
+        if(current.complete){
+            print("item completed")
+//            cell.selectedBackgroundView = UIView()
+//            cell.selectedBackgroundView?.backgroundColor = #colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)
+            let attrStr = NSMutableAttributedString.init(string: current.name)
+            attrStr.addAttribute(NSAttributedString.Key.strikethroughStyle, value: NSNumber.init(value: 1), range: NSRange.init(location:0, length: current.name.count))
+            cell.textLabel?.attributedText = attrStr
+            cell.contentView.backgroundColor = #colorLiteral(red: 0.8470588235, green: 0.8274509804, blue: 0.8039215686, alpha: 1)
+        }
+        else{
+            let attrStr = NSMutableAttributedString.init(string: current.name)
+            cell.textLabel?.attributedText = attrStr
+            cell.contentView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        }
         return cell
     }
 }
@@ -113,14 +136,20 @@ extension GroceryListViewController: UITableViewDelegate{
 
     // get the item selected
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath:IndexPath){
-        self.selectDeselectCell(tableView: GroceryListView, indexPath: indexPath)
-        print("select")
+//        self.selectDeselectCell(tableView: GroceryListView, indexPath: indexPath)
+//        GroceryViewModel.changeItemStatus(byIndex: indexPath.row)
+//        print("select + \(GroceryListView.cellForRow(at: indexPath)?.isSelected)")
+//        self.GroceryListView.reloadData()
     }
     
     // get the item deselected
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        self.selectDeselectCell(tableView: GroceryListView, indexPath: indexPath)
-        print("deselect")
+//        self.selectDeselectCell(tableView: GroceryListView, indexPath: indexPath)
+//        var currentItem = GroceryViewModel.getGroceryItem(byIndex: indexPath.row)
+//        currentItem.complete = false
+//        print("deselect + \(GroceryListView.cellForRow(at: indexPath)?.isSelected)")
+//        GroceryViewModel.updateCompleteStatus(byIndex: indexPath.row, complete: false)
+//        self.GroceryListView.reloadData()
     }
     
     
@@ -131,11 +160,17 @@ extension GroceryListViewController: UITableViewDelegate{
         }
     }
     
-    // button for swipe action
+    // swipe from right hand side
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let edit = editAction(at: indexPath)
         let delete = deleteAction(at: indexPath)
         return UISwipeActionsConfiguration(actions: [delete,edit])
+    }
+    
+    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let complete = completeAction(at: indexPath)
+        return UISwipeActionsConfiguration(actions: [complete])
+        
     }
     
     // edit button
@@ -161,6 +196,35 @@ extension GroceryListViewController: UITableViewDelegate{
         }
         action.backgroundColor = #colorLiteral(red: 0.9294117647, green: 0.1725490196, blue: 0, alpha: 1)
         return action
+    }
+    
+    func completeAction(at indexPath: IndexPath) -> UIContextualAction {
+        
+        if(GroceryViewModel.getStatus(byIndex: indexPath.row)){
+            let action = UIContextualAction(style: .normal, title:"Undo"){
+                (action,view,completion) in
+                GroceryViewModel.changeItemStatus(byIndex: indexPath.row)
+                //            self.GroceryListView.reloadData()
+                self.GroceryListView.reloadRows(at: [indexPath], with: .automatic)
+                completion(true)
+            }
+            
+            action.backgroundColor = #colorLiteral(red: 0.9607843137, green: 0.6392156863, blue: 0.1019607843, alpha: 1)
+            return action
+        }
+        else{
+            let action = UIContextualAction(style: .normal, title:"Complete"){
+                (action,view,completion) in
+                GroceryViewModel.changeItemStatus(byIndex: indexPath.row)
+                //            self.GroceryListView.reloadData()
+                self.GroceryListView.reloadRows(at: [indexPath], with: .automatic)
+                completion(true)
+            }
+            
+            action.backgroundColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
+            return action
+        }
+
     }
     
 }

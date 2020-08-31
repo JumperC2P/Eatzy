@@ -9,10 +9,10 @@
 import UIKit
 
 class GroceryListView: UITableView{
-    var items:[Grocery] = [
-        Grocery(name: "Ground Beef", amount: "1 lb"),
-        Grocery(name: "Crushed Tomatoes", amount: "1 can")
-    ]
+//    var items:[Grocery] = [
+//        Grocery(name: "Ground Beef", amount: "1 lb"),
+//        Grocery(name: "Crushed Tomatoes", amount: "1 can")
+//    ]
     
     var selectArr = [String]()
     

@@ -24,6 +24,10 @@ class GroceryViewModel {
         groceryData.groceryModel[index] = item
     }
     
+    static func updateCompleteStatus(byIndex index:Int, complete:Bool){
+        groceryData.groceryModel[index].complete = complete
+    }
+    
     static func deleteGroceryItem(byIndex index: Int) {
         print("current length is + \(groceryData.groceryModel.count)")
         groceryData.groceryModel.remove(at: index)
@@ -35,5 +39,13 @@ class GroceryViewModel {
     
     static func getGroceryItem(byIndex index:Int) -> Grocery{
         return groceryData.groceryModel[index]
+    }
+    
+    static func changeItemStatus(byIndex index:Int){
+        groceryData.groceryModel[index].complete = !groceryData.groceryModel[index].complete
+    }
+    
+    static func getStatus(byIndex index:Int) -> Bool{
+        return groceryData.groceryModel[index].complete
     }
 }
