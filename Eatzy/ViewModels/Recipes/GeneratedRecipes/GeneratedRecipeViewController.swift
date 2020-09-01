@@ -15,6 +15,9 @@ class GeneratedRecipeViewController: UIViewController{
     @IBOutlet weak var topRecipeServings: UILabel!
     @IBOutlet weak var topRecipeTime: UILabel!
     @IBOutlet weak var otherRecipeTableView: UITableView!
+    @IBOutlet weak var topRecipeView: UIView!
+    var topRecipe: Recipe = Recipe();
+    var selectRecipe: Recipe = Recipe();
     
     
     override func viewDidLoad() {
@@ -24,13 +27,29 @@ class GeneratedRecipeViewController: UIViewController{
         loadTopRecipe();
         otherRecipeTableView.delegate = self;
         otherRecipeTableView.dataSource = self;
+        
+        let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.tapTopRecipeView))
+        self.topRecipeView.addGestureRecognizer(gesture)
+        
+    }
+    
+    @objc func tapTopRecipeView(sender : UITapGestureRecognizer) {
+        selectRecipe = topRecipe;
+        performSegue(withIdentifier: "RecipesInfo", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "RecipesInfo" {
+            let recipesController = segue.destination as! RecipeDetailController;
+            recipesController.recipe = selectRecipe;
+        }
     }
     
     func loadTopRecipe() {
         
-        let topRecipe = RecipesData.topRecipe;
+        topRecipe = RecipesData.topRecipe;
         
-        FetchImages.setImageToImageView(imageUrl: topRecipe.image, imageView: topRecipeImage)
+        FetchURLImages.setImageToImageView(imageUrl: topRecipe.image, imageView: topRecipeImage)
         topRecipeTitle.text = topRecipe.title;
         topRecipeServings.text = String(topRecipe.servings);
         topRecipeTime.text = String(topRecipe.readyInMinutes)+" mins";
@@ -51,6 +70,11 @@ extension GeneratedRecipeViewController: UITableViewDataSource, UITableViewDeleg
         let cell = tableView.dequeueReusableCell(withIdentifier: "OtherRecipes") as! RecipeViewCell;
         cell.setRecipe(recipe: recipe)
         return cell;
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectRecipe = RecipesData.otherRecipes[indexPath.row];
+        performSegue(withIdentifier: "RecipesInfo", sender: self)
     }
 }
 

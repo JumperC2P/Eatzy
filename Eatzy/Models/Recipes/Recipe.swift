@@ -32,11 +32,22 @@ struct Recipe: Codable  {
 
 struct Step: Codable  {
     
+    init(){
+        self.number = 0
+        self.description = ""
+    }
+    
     let number: Int
     let description: String
 }
 
 struct Ingredient: Codable  {
+    
+    init(){
+        self.name = ""
+        self.amount = 0
+        self.unit = ""
+    }
     
     let name: String
     let amount: Double

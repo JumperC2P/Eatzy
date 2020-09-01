@@ -23,17 +23,11 @@ class RecipesData {
             topRecipe = jsonResult.main;
             otherRecipes = jsonResult.others_recommendations;
             
-
            } catch {
               print(error)
            }
         }else{
             print("WHAT")
         }
-        
-        
-        
-        
-        
     }
 }

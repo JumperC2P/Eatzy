@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class FetchImages {
+class FetchURLImages {
     
     static func fetchImage(from urlString: String, completionHandler: @escaping (_ data: Data?) -> ()) {
         let session = URLSession.shared

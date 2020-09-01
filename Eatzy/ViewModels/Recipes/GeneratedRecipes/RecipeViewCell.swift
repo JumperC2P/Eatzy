@@ -16,8 +16,7 @@ class RecipeViewCell: UITableViewCell {
     @IBOutlet weak var otherRecipeTime: UILabel!
     
     func setRecipe(recipe: Recipe) {
-        print(recipe.image);
-        FetchImages.setImageToImageView(imageUrl: recipe.image, imageView: otherImageView)
+        FetchURLImages.setImageToImageView(imageUrl: recipe.image, imageView: otherImageView)
         otherRecipeTitle.text = recipe.title;
         otherRecipeServings.text = String(recipe.servings);
         otherRecipeTime.text = String(recipe.readyInMinutes)+" mins";
