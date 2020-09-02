@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10171AFB24FFD3F60037E7D6 /* FavouriteRecipeModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10171AFA24FFD3F60037E7D6 /* FavouriteRecipeModelView.swift */; };
-		10171AFE24FFD76A0037E7D6 /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10171AFD24FFD76A0037E7D6 /* MasterTableViewController.swift */; };
-		10171B0024FFF59A0037E7D6 /* MockRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10171AFF24FFF59A0037E7D6 /* MockRecipe.swift */; };
 		5EAF0A5F24D262F400483E09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAF0A5E24D262F400483E09 /* AppDelegate.swift */; };
 		5EAF0A6124D262F400483E09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAF0A6024D262F400483E09 /* ViewController.swift */; };
 		5EAF0A6424D262F400483E09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EAF0A6224D262F400483E09 /* Main.storyboard */; };
@@ -41,9 +38,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		10171AFA24FFD3F60037E7D6 /* FavouriteRecipeModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteRecipeModelView.swift; sourceTree = "<group>"; };
-		10171AFD24FFD76A0037E7D6 /* MasterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterTableViewController.swift; sourceTree = "<group>"; };
-		10171AFF24FFF59A0037E7D6 /* MockRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRecipe.swift; sourceTree = "<group>"; };
 		5EAF0A5B24D262F400483E09 /* Eatzy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eatzy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EAF0A5E24D262F400483E09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EAF0A6024D262F400483E09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,8 +84,6 @@
 		10171AFC24FFD4420037E7D6 /* MyFavouriteRecipes */ = {
 			isa = PBXGroup;
 			children = (
-				10171AFA24FFD3F60037E7D6 /* FavouriteRecipeModelView.swift */,
-				10171AFD24FFD76A0037E7D6 /* MasterTableViewController.swift */,
 			);
 			path = MyFavouriteRecipes;
 			sourceTree = "<group>";
@@ -134,7 +126,6 @@
 				893A4F3124FD0ECE00538539 /* Recipe.swift */,
 				893A4F3824FD4F2800538539 /* RecipesData.swift */,
 				893A4F3A24FD51EF00538539 /* RecipeResponse.swift */,
-				10171AFF24FFF59A0037E7D6 /* MockRecipe.swift */,
 			);
 			path = Recipes;
 			sourceTree = "<group>";
@@ -362,15 +353,12 @@
 				89778ECB24F4DB4C0025EE40 /* GroceryData.swift in Sources */,
 				893A4F3B24FD51EF00538539 /* RecipeResponse.swift in Sources */,
 				89778EC324F4DB070025EE40 /* GroceryViewModel.swift in Sources */,
-				10171AFB24FFD3F60037E7D6 /* FavouriteRecipeModelView.swift in Sources */,
 				5EAF0A5F24D262F400483E09 /* AppDelegate.swift in Sources */,
 				8937D30124FCD1130056D677 /* GeneratedRecipeViewController.swift in Sources */,
-				10171B0024FFF59A0037E7D6 /* MockRecipe.swift in Sources */,
 				893A4F5324FE253A00538539 /* StepCell.swift in Sources */,
 				893A4F3F24FD618200538539 /* RecipeViewCell.swift in Sources */,
 				89778EC124F4DB070025EE40 /* GroceryListViewController.swift in Sources */,
 				89C60B8324FBE1570001E610 /* PickerViewController.swift in Sources */,
-				10171AFE24FFD76A0037E7D6 /* MasterTableViewController.swift in Sources */,
 				893A4F4324FDEC8E00538539 /* IngredientTableViewCell.swift in Sources */,
 				893A4F5524FF483600538539 /* ToolbarPickerView.swift in Sources */,
 				89778EC424F4DB070025EE40 /* AddItemViewController.swift in Sources */,
