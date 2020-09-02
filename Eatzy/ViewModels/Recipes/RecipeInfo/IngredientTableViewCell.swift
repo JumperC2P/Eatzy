@@ -14,6 +14,8 @@ class IngredientTableViewCell: UITableViewCell {
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var amount: UILabel!
     @IBOutlet weak var unit: UILabel!
+    @IBOutlet weak var addItemButton: UIButton!
+    
     var ingredient: Ingredient = Ingredient();
     
 
@@ -25,4 +27,12 @@ class IngredientTableViewCell: UITableViewCell {
         
     }
     
+    @IBAction func addItemToGroceryList(_ sender: UIButton) {
+        
+        if addItemButton.imageView?.image==UIImage(named: "circle") {
+            addItemButton.setImage(UIImage(named: "check-in"), for: .normal)
+        }else{
+            addItemButton.setImage(UIImage(named: "circle"), for: .normal)
+        }
+    }
 }

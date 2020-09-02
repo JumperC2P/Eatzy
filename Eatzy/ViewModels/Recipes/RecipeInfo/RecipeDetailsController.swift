@@ -54,6 +54,17 @@ class RecipeDetailController: UIViewController{
         print("Is favorited: \(isFavorited)")
                
     }
+    @IBAction func tapOnAddAllItems(_ sender: Any) {
+    
+        // create the alert
+        let alert = UIAlertController(title: "Successful", message: "All items have been added to grocery list.", preferredStyle: UIAlertController.Style.alert)
+        
+        // add an action (button)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        
+        // show the alert
+        self.present(alert, animated: true, completion: nil)
+    }
 }
 
 extension RecipeDetailController: UITableViewDataSource, UITableViewDelegate {

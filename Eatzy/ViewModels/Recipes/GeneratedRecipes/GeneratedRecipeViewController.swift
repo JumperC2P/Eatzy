@@ -35,11 +35,11 @@ class GeneratedRecipeViewController: UIViewController{
     
     @objc func tapTopRecipeView(sender : UITapGestureRecognizer) {
         selectRecipe = topRecipe;
-        performSegue(withIdentifier: "RecipesInfo", sender: self)
+        performSegue(withIdentifier: "RecipeInfo", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "RecipesInfo" {
+        if segue.identifier == "RecipeInfo" {
             let recipesController = segue.destination as! RecipeDetailController;
             recipesController.recipe = selectRecipe;
         }
@@ -74,7 +74,7 @@ extension GeneratedRecipeViewController: UITableViewDataSource, UITableViewDeleg
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectRecipe = RecipesData.otherRecipes[indexPath.row];
-        performSegue(withIdentifier: "RecipesInfo", sender: self)
+        performSegue(withIdentifier: "RecipeInfo", sender: self)
     }
 }
 

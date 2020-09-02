@@ -10,7 +10,6 @@
 		5EAF0A5F24D262F400483E09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAF0A5E24D262F400483E09 /* AppDelegate.swift */; };
 		5EAF0A6124D262F400483E09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAF0A6024D262F400483E09 /* ViewController.swift */; };
 		5EAF0A6424D262F400483E09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EAF0A6224D262F400483E09 /* Main.storyboard */; };
-		5EAF0A6624D262F600483E09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EAF0A6524D262F600483E09 /* Assets.xcassets */; };
 		5EAF0A6924D262F600483E09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EAF0A6724D262F600483E09 /* LaunchScreen.storyboard */; };
 		8937D30124FCD1130056D677 /* GeneratedRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8937D30024FCD1130056D677 /* GeneratedRecipeViewController.swift */; };
 		893A4F2F24FD08A900538539 /* RecipeDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893A4F2E24FD08A900538539 /* RecipeDetailsController.swift */; };
@@ -18,7 +17,6 @@
 		893A4F3524FD229900538539 /* FetchURLImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893A4F3424FD229900538539 /* FetchURLImages.swift */; };
 		893A4F3924FD4F2800538539 /* RecipesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893A4F3824FD4F2800538539 /* RecipesData.swift */; };
 		893A4F3B24FD51EF00538539 /* RecipeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893A4F3A24FD51EF00538539 /* RecipeResponse.swift */; };
-		893A4F3D24FD57E200538539 /* recipes_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 893A4F3C24FD57E200538539 /* recipes_data.json */; };
 		893A4F3F24FD618200538539 /* RecipeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893A4F3E24FD618200538539 /* RecipeViewCell.swift */; };
 		893A4F4324FDEC8E00538539 /* IngredientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893A4F4224FDEC8E00538539 /* IngredientTableViewCell.swift */; };
 		893A4F5324FE253A00538539 /* StepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893A4F5224FE253A00538539 /* StepCell.swift */; };
@@ -28,7 +26,6 @@
 		89778E9F24F4224E0025EE40 /* GroceryList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89778E9E24F4224E0025EE40 /* GroceryList.storyboard */; };
 		89778EA224F4227F0025EE40 /* EatzyChef.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89778EA024F4227F0025EE40 /* EatzyChef.storyboard */; };
 		89778EA624F424E20025EE40 /* Recipes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89778EA524F424E20025EE40 /* Recipes.storyboard */; };
-		89778EA824F424EF0025EE40 /* RecipesInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89778EA724F424EF0025EE40 /* RecipesInfo.storyboard */; };
 		89778EC124F4DB070025EE40 /* GroceryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89778EBD24F4DB060025EE40 /* GroceryListViewController.swift */; };
 		89778EC224F4DB070025EE40 /* GroceryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89778EBE24F4DB060025EE40 /* GroceryListView.swift */; };
 		89778EC324F4DB070025EE40 /* GroceryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89778EBF24F4DB060025EE40 /* GroceryViewModel.swift */; };
@@ -37,7 +34,10 @@
 		89778ECB24F4DB4C0025EE40 /* GroceryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89778EC824F4DB4C0025EE40 /* GroceryData.swift */; };
 		89778ECC24F4DB4C0025EE40 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89778EC924F4DB4C0025EE40 /* Color.swift */; };
 		89778ECD24F4DB4C0025EE40 /* Grocery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89778ECA24F4DB4C0025EE40 /* Grocery.swift */; };
+		89906C3724FF719E002A6B5A /* recipes_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 89906C3624FF719E002A6B5A /* recipes_data.json */; };
+		89906C3924FF726E002A6B5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89906C3824FF726E002A6B5A /* Assets.xcassets */; };
 		89C60B8324FBE1570001E610 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C60B8224FBE1560001E610 /* PickerViewController.swift */; };
+		89DA30E224FF7D4E0089DE3F /* RecipeInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89DA30E124FF7D4E0089DE3F /* RecipeInfo.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,7 +45,6 @@
 		5EAF0A5E24D262F400483E09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EAF0A6024D262F400483E09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5EAF0A6324D262F400483E09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5EAF0A6524D262F600483E09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EAF0A6824D262F600483E09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EAF0A6A24D262F600483E09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8937D30024FCD1130056D677 /* GeneratedRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedRecipeViewController.swift; sourceTree = "<group>"; };
@@ -54,7 +53,6 @@
 		893A4F3424FD229900538539 /* FetchURLImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchURLImages.swift; sourceTree = "<group>"; };
 		893A4F3824FD4F2800538539 /* RecipesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesData.swift; sourceTree = "<group>"; };
 		893A4F3A24FD51EF00538539 /* RecipeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeResponse.swift; sourceTree = "<group>"; };
-		893A4F3C24FD57E200538539 /* recipes_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = recipes_data.json; path = Assets.xcassets/recipes_data.json; sourceTree = "<group>"; };
 		893A4F3E24FD618200538539 /* RecipeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewCell.swift; sourceTree = "<group>"; };
 		893A4F4224FDEC8E00538539 /* IngredientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientTableViewCell.swift; sourceTree = "<group>"; };
 		893A4F5224FE253A00538539 /* StepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCell.swift; sourceTree = "<group>"; };
@@ -64,7 +62,6 @@
 		89778E9E24F4224E0025EE40 /* GroceryList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = GroceryList.storyboard; path = Eatzy/Views/GroceryList/GroceryList.storyboard; sourceTree = SOURCE_ROOT; };
 		89778EA124F4227F0025EE40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/EatzyChef.storyboard; sourceTree = "<group>"; };
 		89778EA524F424E20025EE40 /* Recipes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Recipes.storyboard; sourceTree = "<group>"; };
-		89778EA724F424EF0025EE40 /* RecipesInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RecipesInfo.storyboard; sourceTree = "<group>"; };
 		89778EBD24F4DB060025EE40 /* GroceryListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryListViewController.swift; sourceTree = "<group>"; };
 		89778EBE24F4DB060025EE40 /* GroceryListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryListView.swift; sourceTree = "<group>"; };
 		89778EBF24F4DB060025EE40 /* GroceryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryViewModel.swift; sourceTree = "<group>"; };
@@ -73,7 +70,10 @@
 		89778EC824F4DB4C0025EE40 /* GroceryData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryData.swift; sourceTree = "<group>"; };
 		89778EC924F4DB4C0025EE40 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		89778ECA24F4DB4C0025EE40 /* Grocery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grocery.swift; sourceTree = "<group>"; };
+		89906C3624FF719E002A6B5A /* recipes_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recipes_data.json; sourceTree = "<group>"; };
+		89906C3824FF726E002A6B5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89C60B8224FBE1560001E610 /* PickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		89DA30E124FF7D4E0089DE3F /* RecipeInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RecipeInfo.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,15 +106,15 @@
 		5EAF0A5D24D262F400483E09 /* Eatzy */ = {
 			isa = PBXGroup;
 			children = (
-				893A4F3C24FD57E200538539 /* recipes_data.json */,
+				89906C3624FF719E002A6B5A /* recipes_data.json */,
 				89778EC524F4DB180025EE40 /* Constants */,
 				89778E9624F41E040025EE40 /* ViewModels */,
 				89778E9524F41DFC0025EE40 /* Models */,
 				89778E9424F41DCF0025EE40 /* Views */,
 				5EAF0A5E24D262F400483E09 /* AppDelegate.swift */,
-				5EAF0A6524D262F600483E09 /* Assets.xcassets */,
 				5EAF0A6724D262F600483E09 /* LaunchScreen.storyboard */,
 				5EAF0A6A24D262F600483E09 /* Info.plist */,
+				89906C3824FF726E002A6B5A /* Assets.xcassets */,
 			);
 			path = Eatzy;
 			sourceTree = "<group>";
@@ -202,7 +202,7 @@
 			children = (
 				89778EA024F4227F0025EE40 /* EatzyChef.storyboard */,
 				89778EA524F424E20025EE40 /* Recipes.storyboard */,
-				89778EA724F424EF0025EE40 /* RecipesInfo.storyboard */,
+				89DA30E124FF7D4E0089DE3F /* RecipeInfo.storyboard */,
 			);
 			path = Recipes;
 			sourceTree = "<group>";
@@ -298,7 +298,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1030;
-				ORGANIZATIONNAME = "Michael Yue";
+				ORGANIZATIONNAME = "RMIT-2020IPSE-G12";
 				TargetAttributes = {
 					5EAF0A5A24D262F400483E09 = {
 						CreatedOnToolsVersion = 10.3;
@@ -330,14 +330,14 @@
 			files = (
 				89778E9F24F4224E0025EE40 /* GroceryList.storyboard in Resources */,
 				5EAF0A6924D262F600483E09 /* LaunchScreen.storyboard in Resources */,
-				5EAF0A6624D262F600483E09 /* Assets.xcassets in Resources */,
 				89778E9A24F4218C0025EE40 /* Profile.storyboard in Resources */,
 				89778EA624F424E20025EE40 /* Recipes.storyboard in Resources */,
+				89DA30E224FF7D4E0089DE3F /* RecipeInfo.storyboard in Resources */,
+				89906C3924FF726E002A6B5A /* Assets.xcassets in Resources */,
 				5EAF0A6424D262F400483E09 /* Main.storyboard in Resources */,
 				89778EA224F4227F0025EE40 /* EatzyChef.storyboard in Resources */,
-				89778EA824F424EF0025EE40 /* RecipesInfo.storyboard in Resources */,
 				89778E9D24F422190025EE40 /* Favorites.storyboard in Resources */,
-				893A4F3D24FD57E200538539 /* recipes_data.json in Resources */,
+				89906C3724FF719E002A6B5A /* recipes_data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
