@@ -69,9 +69,3 @@ class EditItemViewController: UIViewController {
         }
     }
 }
-
-extension UIButton{
-    func addShadowAndRoundedCorners() {
-//        layer.shadowOffset
-    }
-}
