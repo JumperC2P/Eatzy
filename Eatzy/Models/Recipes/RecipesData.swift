@@ -23,6 +23,8 @@ class RecipesData {
             topRecipe = jsonResult.main;
             otherRecipes = jsonResult.others_recommendations;
             
+            FavoriteRecipesData.favoriteRecipes.append(topRecipe);
+            
            } catch {
               print(error)
            }

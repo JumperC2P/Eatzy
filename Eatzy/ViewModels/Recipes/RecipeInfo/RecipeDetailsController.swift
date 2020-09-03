@@ -19,13 +19,23 @@ class RecipeDetailController: UIViewController{
     @IBOutlet weak var ingredientTableView: UITableView!
     @IBOutlet weak var stepTableView: UITableView!
     var recipe: Recipe = Recipe();
+    var from: String = "";
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        favoriteButton.tintColor = UIColor.black;
-        loadInfo();
+        if from == "Favorites" {
+//            favoriteButton.isEnabled = false;
+//            favoriteButton.image = UIImage(named: "favorite-fill")
+            self.navigationItem.rightBarButtonItem = nil;
+        }else {
+            favoriteButton.tintColor = UIColor.black;
+        }
+        
+        if recipe.title != "" {
+            loadInfo();
+        }
     }
        
     func loadInfo(){
@@ -42,17 +52,18 @@ class RecipeDetailController: UIViewController{
     
     @IBAction func tapOnFavorite(_ sender: UIBarButtonItem) {
         
-        if isFavorited {
-           favoriteButton.image = UIImage(named: "favorite")
-           favoriteButton.tintColor = UIColor.black;
-        }else{
-           favoriteButton.image = UIImage(named: "favorite-fill")
-           favoriteButton.tintColor = UIColor.red;
+        if from != "Favorites" {
+            if isFavorited {
+                favoriteButton.image = UIImage(named: "favorite")
+                favoriteButton.tintColor = UIColor.black;
+            }else{
+                favoriteButton.image = UIImage(named: "favorite-fill")
+                favoriteButton.tintColor = UIColor.red;
+            }
+            isFavorited = !isFavorited;
+            print("Is favorited: \(isFavorited)")
         }
-
-        isFavorited = !isFavorited;
-        print("Is favorited: \(isFavorited)")
-               
+    
     }
     @IBAction func tapOnAddAllItems(_ sender: Any) {
     

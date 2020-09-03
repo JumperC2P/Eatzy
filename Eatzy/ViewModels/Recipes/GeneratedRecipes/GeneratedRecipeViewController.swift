@@ -23,7 +23,6 @@ class GeneratedRecipeViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        RecipesData.generateData();
         loadTopRecipe();
         otherRecipeTableView.delegate = self;
         otherRecipeTableView.dataSource = self;

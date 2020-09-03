@@ -13,7 +13,7 @@
         <!--RecipeInfo-->
         <scene sceneID="H1V-Zp-CSt">
             <objects>
-                <viewController title="RecipeInfo" id="fCx-8s-abv" customClass="RecipeDetailController" customModule="Eatzy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RecipeDetailController" title="RecipeInfo" id="fCx-8s-abv" customClass="RecipeDetailController" customModule="Eatzy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gs8-VC-7XN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1050"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -199,10 +199,10 @@
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                     <subviews>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Tle-3W-fmt">
-                                                                            <rect key="frame" x="20" y="16" width="335" height="118"/>
+                                                                            <rect key="frame" x="20" y="16" width="335" height="12"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="num" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dK-Dc-BiK">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="30" height="118"/>
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="30" height="12"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="width" constant="30" id="v0y-Dz-afF"/>
                                                                                     </constraints>
@@ -211,7 +211,7 @@
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="desc" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xx-jZ-hMo">
-                                                                                    <rect key="frame" x="40" y="0.0" width="295" height="118"/>
+                                                                                    <rect key="frame" x="40" y="0.0" width="295" height="12"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                                     <nil key="textColor"/>
                                                                                     <nil key="highlightedColor"/>
@@ -279,7 +279,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CCv-Op-uW1"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Recipe Detail" id="dq5-fi-hPM">
+                    <navigationItem key="navigationItem" title="Recipe" id="dq5-fi-hPM">
                         <barButtonItem key="rightBarButtonItem" title="Favorite Button" image="favorite" id="rIl-kC-pbJ">
                             <connections>
                                 <action selector="tapOnFavorite:" destination="fCx-8s-abv" id="smR-Ic-q48"/>

@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oKQ-e6-SkW">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oKQ-e6-SkW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,8 +21,8 @@
                     <connections>
                         <segue destination="hlq-3P-WkW" kind="relationship" relationship="viewControllers" id="9LY-1M-jCW"/>
                         <segue destination="daM-OU-P1b" kind="relationship" relationship="viewControllers" id="fgt-fL-OGm"/>
-                        <segue destination="JUY-Pn-OhL" kind="relationship" relationship="viewControllers" id="02C-6f-ZkM"/>
-                        <segue destination="ZBP-h2-xAE" kind="relationship" relationship="viewControllers" id="4Tg-Vp-UEW"/>
+                        <segue destination="bpw-Vl-3Qi" kind="relationship" relationship="viewControllers" id="Iam-5h-Hfx"/>
+                        <segue destination="ZBP-h2-xAE" kind="relationship" relationship="viewControllers" id="SXw-8S-qf0"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Hh-cI-v0w" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -33,7 +35,7 @@
                 <navigationController id="hlq-3P-WkW" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Generate" image="kitchen" landscapeImage="kitchen" largeContentSizeImage="kitchen" selectedImage="kitchen" id="fQw-VO-gzH"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gUR-pw-Wda">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -50,7 +52,7 @@
                 <navigationController id="daM-OU-P1b" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Grocery" image="checklist" landscapeImage="checklist" selectedImage="checklist" id="bRb-ar-Rsn"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="W9r-Rd-wba">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -67,7 +69,7 @@
                 <navigationController id="ZBP-h2-xAE" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profile" image="profile" landscapeImage="profile" largeContentSizeImage="profile" selectedImage="profile" id="2w9-gz-xB5"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wu2-tO-4c2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -77,23 +79,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4RH-Mf-ww9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="217" y="-68"/>
-        </scene>
-        <!--Favourite-->
-        <scene sceneID="Ade-Oe-WqH">
-            <objects>
-                <navigationController id="JUY-Pn-OhL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Favourite" image="favorite-select" landscapeImage="favorite-select" largeContentSizeImage="favorite-select" selectedImage="favorite-select" id="M8L-cf-5Ld"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eMD-i4-le9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="kJU-Ni-jNW" kind="relationship" relationship="rootViewController" id="U71-dB-M4Z"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="db9-2D-TTR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-759" y="-68"/>
         </scene>
         <!--Profile-->
         <scene sceneID="qSa-of-oUA">
@@ -113,7 +98,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RNR-qC-jzM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-759" y="431"/>
+            <point key="canvasLocation" x="-349" y="1301"/>
         </scene>
         <!--GroceryList-->
         <scene sceneID="g4d-l8-rMJ">
@@ -124,6 +109,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Pr-Hb-dS0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1730" y="431"/>
+        </scene>
+        <!--RecipeDetailController-->
+        <scene sceneID="7jl-6x-bm3">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="RecipeDetailController" storyboardName="RecipeInfo" referencedIdentifier="RecipeDetailController" id="e2q-n8-QH7" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A9j-Qv-AlM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1100" y="520"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FeV-fE-fK6">
+            <objects>
+                <navigationController id="q37-ah-LYS" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ktq-2Q-2OO">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="kJU-Ni-jNW" kind="relationship" relationship="rootViewController" id="ZXj-iw-Qyl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JtY-z8-eqc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-348" y="831"/>
+        </scene>
+        <!--Favorites-->
+        <scene sceneID="Qsk-En-Dtc">
+            <objects>
+                <splitViewController id="bpw-Vl-3Qi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favorites" image="favorite-select" landscapeImage="favorite-select" largeContentSizeImage="favorite-select" selectedImage="favorite-select" id="THT-FP-LHC"/>
+                    <connections>
+                        <segue destination="q37-ah-LYS" kind="relationship" relationship="masterViewController" id="HW7-RR-hrF"/>
+                        <segue destination="e2q-n8-QH7" kind="showDetail" id="T0t-vj-lme"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7dK-HB-N8o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-754" y="-69"/>
         </scene>
         <!--EatzyChef-->
         <scene sceneID="hQn-Fl-e0x">
