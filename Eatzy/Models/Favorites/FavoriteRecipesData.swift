@@ -35,4 +35,8 @@ class FavoriteRecipesData {
         }
         return false;
     }
+    
+    static func removeRecipe(byIndex: Int){
+        favoriteRecipes.remove(at: byIndex);
+    }
 }

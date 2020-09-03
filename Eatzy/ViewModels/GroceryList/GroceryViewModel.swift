@@ -36,6 +36,17 @@ class GroceryViewModel {
         groceryData.groceryModel.remove(at: index)
     }
     
+    static func deleteGroceryItem(name: String, amount: String) {
+        if groceryData.groceryModel.count > 0 {
+            for i in 0...groceryData.groceryModel.count-1{
+                if groceryData.groceryModel[i].name == name && groceryData.groceryModel[i].amount == amount{
+                    groceryData.groceryModel.remove(at: i)
+                    break;
+                }
+            }
+        }
+    }
+    
     // add item in target position
     static func addGroceryItem(byIndex index:Int, newItem item:Grocery) {
         groceryData.groceryModel.insert(item, at: index)
@@ -55,4 +66,25 @@ class GroceryViewModel {
     static func getStatus(byIndex index:Int) -> Bool{
         return groceryData.groceryModel[index].complete
     }
+    
+    
+    static func addGroceryItems(items: [Grocery]){
+        groceryData.groceryModel.append(contentsOf: items);
+    }
+    
+    static func addGroceryItem(grocery: Grocery){
+        groceryData.groceryModel.append(grocery);
+    }
+    
+    static func isExistInGroceryList(name: String, amount: String) -> Bool {
+        if groceryData.groceryModel.count > 0 {
+            for i in 0...groceryData.groceryModel.count-1{
+                if groceryData.groceryModel[i].name == name && groceryData.groceryModel[i].amount == amount{
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+    
 }

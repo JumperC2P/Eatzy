@@ -57,6 +57,10 @@ class GroceryListViewController: UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        GroceryListView.reloadData();
+    }
+    
     // segue for editing items, pass essential information and functions
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "EditItemSegue"{

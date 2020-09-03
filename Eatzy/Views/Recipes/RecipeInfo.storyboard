@@ -288,6 +288,7 @@
                     </navigationItem>
                     <size key="freeformSize" width="375" height="1050"/>
                     <connections>
+                        <outlet property="addAllButton" destination="f6f-bc-b9v" id="9db-BD-PmV"/>
                         <outlet property="favoriteButton" destination="rIl-kC-pbJ" id="yTV-Zs-FVh"/>
                         <outlet property="ingredientTableView" destination="bmD-0d-nLv" id="Xhd-Jb-pX0"/>
                         <outlet property="recipeImage" destination="pOv-cy-WdW" id="eix-Dl-036"/>

@@ -16,6 +16,8 @@ class GeneratedRecipeViewController: UIViewController{
     @IBOutlet weak var topRecipeTime: UILabel!
     @IBOutlet weak var otherRecipeTableView: UITableView!
     @IBOutlet weak var topRecipeView: UIView!
+    @IBOutlet weak var generateButton: UIButton!
+    
     var topRecipe: Recipe = Recipe();
     var selectRecipe: Recipe = Recipe();
     
@@ -42,6 +44,18 @@ class GeneratedRecipeViewController: UIViewController{
             let recipesController = segue.destination as! RecipeDetailController;
             recipesController.recipe = selectRecipe;
         }
+    }
+    @IBAction func regenerateRecipes(_ sender: Any) {
+        
+        // create the alert
+        let alert = UIAlertController(title: "Next Plan", message: "The button will be used to connect with REST API to refetch recipes", preferredStyle: UIAlertController.Style.alert)
+        
+        // add an action (button)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        
+        // show the alert
+        self.present(alert, animated: true, completion: nil)
+        
     }
     
     func loadTopRecipe() {

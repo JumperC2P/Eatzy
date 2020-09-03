@@ -18,6 +18,7 @@ class RecipeDetailController: UIViewController{
     @IBOutlet weak var recipeTime: UILabel!
     @IBOutlet weak var ingredientTableView: UITableView!
     @IBOutlet weak var stepTableView: UITableView!
+    @IBOutlet weak var addAllButton: UIButton!
     var recipe: Recipe = Recipe();
     var from: String = "";
     
@@ -33,6 +34,18 @@ class RecipeDetailController: UIViewController{
             if FavoriteRecipesData.isExistInFavorites(recipe: recipe){
                 favoriteButton.image = UIImage(named: "favorite-fill")
                 favoriteButton.tintColor = UIColor.red;
+                
+            }
+            addAllButton.isEnabled = false;
+            let count = recipe.ingredients.count;
+            if count > 0 {
+                for i in 0..<count {
+                    let cell = recipe.ingredients[i];
+                    if !GroceryViewModel.isExistInGroceryList(name: cell.name, amount: "\(cell.amount) \(cell.unit)"){
+                        addAllButton.isEnabled = true;
+                        break;
+                    }
+                }
             }
         }
         
@@ -40,7 +53,11 @@ class RecipeDetailController: UIViewController{
             loadInfo();
         }
     }
-       
+    
+    override func viewWillAppear(_ animated: Bool) {
+        ingredientTableView.reloadData();
+    }
+    
     func loadInfo(){
         FetchURLImages.setImageToImageView(imageUrl: recipe.image, imageView: recipeImage)
         recipeTitle.text = recipe.title;
@@ -72,20 +89,28 @@ class RecipeDetailController: UIViewController{
                 
             }
             isFavorited = !isFavorited;
-            print("Is favorited: \(isFavorited)")
         }
     
     }
     @IBAction func tapOnAddAllItems(_ sender: Any) {
-    
-        // create the alert
-        let alert = UIAlertController(title: "Successful", message: "All items have been added to grocery list.", preferredStyle: UIAlertController.Style.alert)
         
-        // add an action (button)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-        
-        // show the alert
-        self.present(alert, animated: true, completion: nil)
+        let count = recipe.ingredients.count;
+        if count > 0 {
+            for i in 0..<count {
+                let cell = recipe.ingredients[i];
+                GroceryViewModel.addGroceryItem(grocery: Grocery(name: cell.name, amount: "\(String(describing: cell.amount)) \(cell.unit)"));
+            }
+            ingredientTableView.reloadData();
+            addAllButton.isEnabled = false;
+            // create the alert
+            let alert = UIAlertController(title: "Successful", message: "All items have been added to grocery list.", preferredStyle: UIAlertController.Style.alert)
+            
+            // add an action (button)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+            
+            // show the alert
+            self.present(alert, animated: true, completion: nil)
+        }
     }
 }
 
@@ -116,5 +141,11 @@ extension RecipeDetailController: UITableViewDataSource, UITableViewDelegate {
     
     }
     
-
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if tableView == ingredientTableView {
+            let ingredient = cell as! IngredientTableViewCell;
+            ingredient.checkGroceryList();
+        }
+    }
+    
 }

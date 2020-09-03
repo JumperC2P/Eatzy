@@ -18,7 +18,7 @@ class FavoritesViewCell: UITableViewCell {
     func setRecipe(recipe: Recipe) {
         FetchURLImages.setImageToImageView(imageUrl: recipe.image, imageView: cellImage)
         cellTitle.text = recipe.title;
-        cellServings.text = String(recipe.servings);
+        cellServings.text = "  "+String(recipe.servings);
         cellTime.text = String(recipe.readyInMinutes)+" mins";
     }
 }
