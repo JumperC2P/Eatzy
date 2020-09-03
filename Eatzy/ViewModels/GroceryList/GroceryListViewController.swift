@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-class GroceryListViewController: UIViewController {
+class GroceryListViewController: UIViewController, UIPopoverPresentationControllerDelegate {
 
     var selectArr = [String]()
     var editIndex: Int?
@@ -64,12 +64,18 @@ class GroceryListViewController: UIViewController {
     // segue for editing items, pass essential information and functions
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "EditItemSegue"{
+            segue.destination.popoverPresentationController?.delegate = self
             let popup = segue.destination as! EditItemViewController
             popup.editIndex = self.editIndex
             popup.doneSaving = {[weak self] in
                 self?.GroceryListView.reloadData()
             }
         }
+    }
+    
+    // show popover in iphone
+    func adaptivePresentationStyle(for controller: UIPresentationController, traitCollection: UITraitCollection) -> UIModalPresentationStyle {
+        return .none
     }
 
 
@@ -177,3 +183,9 @@ extension GroceryListViewController: UITableViewDelegate{
     }
     
 }
+
+//extension GroceryListViewController:UIPopoverPresentationControllerDelegate{
+//    override func prepare(for segue:){
+//
+//    }
+//}
