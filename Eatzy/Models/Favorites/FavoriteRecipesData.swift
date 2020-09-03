@@ -11,4 +11,28 @@ import Foundation
 class FavoriteRecipesData {
     
     static var favoriteRecipes = [Recipe]();
+    
+    static func addFavoriteRecipes(recipe: Recipe){
+        favoriteRecipes.append(recipe);
+    }
+    
+    static func removeRecipe(recipe: Recipe){
+        for i in 0...favoriteRecipes.count-1 {
+            if favoriteRecipes[i].id == recipe.id {
+                favoriteRecipes.remove(at: i);
+                break;
+            }
+        }
+    }
+    
+    static func isExistInFavorites(recipe: Recipe) -> Bool{
+        if favoriteRecipes.count > 0 {
+            for i in 0...favoriteRecipes.count-1 {
+                if favoriteRecipes[i].id == recipe.id {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

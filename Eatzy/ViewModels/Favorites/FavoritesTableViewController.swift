@@ -24,6 +24,11 @@ class FavoritesTableViewController: UITableViewController, UISplitViewController
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        print(FavoriteRecipesData.favoriteRecipes);
+        self.tableView.reloadData();
+    }
+    
     func splitViewController(
         _ splitViewController: UISplitViewController,
         collapseSecondary secondaryViewController: UIViewController,

@@ -30,7 +30,10 @@ class RecipeDetailController: UIViewController{
 //            favoriteButton.image = UIImage(named: "favorite-fill")
             self.navigationItem.rightBarButtonItem = nil;
         }else {
-            favoriteButton.tintColor = UIColor.black;
+            if FavoriteRecipesData.isExistInFavorites(recipe: recipe){
+                favoriteButton.image = UIImage(named: "favorite-fill")
+                favoriteButton.tintColor = UIColor.red;
+            }
         }
         
         if recipe.title != "" {
@@ -56,9 +59,17 @@ class RecipeDetailController: UIViewController{
             if isFavorited {
                 favoriteButton.image = UIImage(named: "favorite")
                 favoriteButton.tintColor = UIColor.black;
+                
+                // Delete recipes from FavoriteRecipe Array
+                FavoriteRecipesData.removeRecipe(recipe: recipe);
+                
             }else{
                 favoriteButton.image = UIImage(named: "favorite-fill")
                 favoriteButton.tintColor = UIColor.red;
+                
+                // add to FavoriteRecipe Array
+                FavoriteRecipesData.addFavoriteRecipes(recipe: recipe);
+                
             }
             isFavorited = !isFavorited;
             print("Is favorited: \(isFavorited)")
