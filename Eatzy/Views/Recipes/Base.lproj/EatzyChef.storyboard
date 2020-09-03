@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iWe-nI-gz1">
-    <device id="retina4_7" orientation="portrait">
+    <device id="ipad12_9rounded" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,14 +15,14 @@
             <objects>
                 <viewController id="iWe-nI-gz1" userLabel="Generate Recipe" customClass="PickerViewController" customModule="Eatzy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s9x-wh-NsA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="58" translatesAutoresizingMaskIntoConstraints="NO" id="SJ0-TY-gQB">
-                                <rect key="frame" x="30" y="99" width="315" height="294"/>
+                                <rect key="frame" x="45" y="114" width="934" height="570"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KIo-k8-hnB" customClass="RecipeViewController" customModule="GenerateRecipe">
-                                        <rect key="frame" x="0.0" y="0.0" width="315" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="934" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuisines:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLg-8M-ufN">
                                                 <rect key="frame" x="0.0" y="0.0" width="120" height="30"/>
@@ -35,14 +35,15 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="click here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GtK-8A-gwb">
-                                                <rect key="frame" x="120" y="0.0" width="195" height="30"/>
+                                                <rect key="frame" x="170" y="0.0" width="764" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
+                                        <variation key="heightClass=regular-widthClass=regular" spacing="50"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wAL-QO-UvZ">
-                                        <rect key="frame" x="0.0" y="88" width="315" height="30"/>
+                                        <rect key="frame" x="0.0" y="180" width="934" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diets:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGB-nV-62c">
                                                 <rect key="frame" x="0.0" y="0.0" width="120" height="30"/>
@@ -55,14 +56,15 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="click here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3yt-uO-7hU">
-                                                <rect key="frame" x="120" y="0.0" width="195" height="30"/>
+                                                <rect key="frame" x="170" y="0.0" width="764" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
+                                        <variation key="heightClass=regular-widthClass=regular" spacing="50"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="99F-fn-Ry3">
-                                        <rect key="frame" x="0.0" y="176" width="315" height="30"/>
+                                        <rect key="frame" x="0.0" y="360" width="934" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Types:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXQ-3O-z6U">
                                                 <rect key="frame" x="0.0" y="0.0" width="120" height="30"/>
@@ -74,14 +76,15 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="click here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WOJ-xC-ib7">
-                                                <rect key="frame" x="130" y="0.0" width="185" height="30"/>
+                                                <rect key="frame" x="170" y="0.0" width="764" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
+                                        <variation key="heightClass=regular-widthClass=regular" spacing="50"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="Xjp-PV-daD">
-                                        <rect key="frame" x="0.0" y="264" width="315" height="30"/>
+                                        <rect key="frame" x="0.0" y="540" width="934" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Intolerances:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hf-CY-PAp">
                                                 <rect key="frame" x="0.0" y="0.0" width="110" height="30"/>
@@ -90,25 +93,28 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="click here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mng-L2-pTi">
-                                                <rect key="frame" x="129" y="0.0" width="186" height="30"/>
+                                                <rect key="frame" x="167" y="0.0" width="767" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
+                                        <variation key="heightClass=regular-widthClass=regular" spacing="57"/>
                                     </stackView>
                                 </subviews>
                                 <variation key="heightClass=compact-widthClass=compact" spacing="30"/>
                                 <variation key="heightClass=compact-widthClass=regular" spacing="48"/>
+                                <variation key="heightClass=regular-widthClass=regular" spacing="150"/>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tjC-0F-6M4">
-                                <rect key="frame" x="125.5" y="530" width="124" height="111"/>
+                                <rect key="frame" x="449.5" y="1107" width="125" height="119"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="122" id="0kF-6G-OId"/>
                                     <constraint firstAttribute="width" constant="102" id="4jl-1l-qKv"/>
                                     <constraint firstAttribute="width" constant="124" id="MAj-Bn-qdb"/>
                                     <constraint firstAttribute="height" constant="110" id="ffK-OO-9pp">
                                         <variation key="heightClass=compact-widthClass=compact" constant="93"/>
-                                        <variation key="heightClass=regular-widthClass=compact" constant="111"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="116"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="119"/>
                                     </constraint>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="125" id="itD-ct-kp6">
                                         <variation key="heightClass=regular-widthClass=compact" constant="137"/>
@@ -145,44 +151,68 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Z3i-2G-7hc" firstAttribute="trailing" secondItem="SJ0-TY-gQB" secondAttribute="trailing" constant="30" id="19d-JU-tnO"/>
+                            <constraint firstItem="Z3i-2G-7hc" firstAttribute="bottom" secondItem="tjC-0F-6M4" secondAttribute="bottom" constant="471" id="1g0-m1-CCP">
+                                <variation key="heightClass=regular-widthClass=regular" constant="120"/>
+                            </constraint>
                             <constraint firstItem="tjC-0F-6M4" firstAttribute="top" secondItem="Z3i-2G-7hc" secondAttribute="top" constant="60" id="4tL-JL-c4k">
                                 <variation key="heightClass=compact-widthClass=compact" constant="84"/>
                             </constraint>
                             <constraint firstItem="SJ0-TY-gQB" firstAttribute="leading" secondItem="Z3i-2G-7hc" secondAttribute="leading" constant="30" id="58M-Ko-IC3"/>
+                            <constraint firstItem="tjC-0F-6M4" firstAttribute="centerX" secondItem="s9x-wh-NsA" secondAttribute="centerX" id="7zd-r9-ONi"/>
                             <constraint firstItem="Z3i-2G-7hc" firstAttribute="bottom" secondItem="tjC-0F-6M4" secondAttribute="bottom" constant="26" id="8Ng-yj-VIp"/>
                             <constraint firstItem="Z3i-2G-7hc" firstAttribute="trailing" secondItem="tjC-0F-6M4" secondAttribute="trailing" constant="35" id="CaI-12-38q"/>
+                            <constraint firstItem="tjC-0F-6M4" firstAttribute="leading" secondItem="Z3i-2G-7hc" secondAttribute="leading" constant="126" id="Cah-lL-aBu"/>
                             <constraint firstItem="tjC-0F-6M4" firstAttribute="top" secondItem="Z3i-2G-7hc" secondAttribute="top" constant="95" id="G5y-ol-AVy"/>
                             <constraint firstItem="SJ0-TY-gQB" firstAttribute="top" secondItem="Z3i-2G-7hc" secondAttribute="top" constant="35" id="OKg-ZQ-a5Q"/>
+                            <constraint firstItem="Z3i-2G-7hc" firstAttribute="trailing" secondItem="SJ0-TY-gQB" secondAttribute="trailing" constant="45" id="OY7-Ek-hz4"/>
+                            <constraint firstItem="Z3i-2G-7hc" firstAttribute="trailing" secondItem="tjC-0F-6M4" secondAttribute="trailing" constant="584" id="QSJ-jT-L8g"/>
+                            <constraint firstItem="SJ0-TY-gQB" firstAttribute="leading" secondItem="Z3i-2G-7hc" secondAttribute="leading" constant="45" id="RSt-Qy-flg"/>
                             <constraint firstItem="SJ0-TY-gQB" firstAttribute="leading" secondItem="Z3i-2G-7hc" secondAttribute="leading" constant="30" id="SYI-UY-6LD"/>
                             <constraint firstItem="tjC-0F-6M4" firstAttribute="top" secondItem="s9x-wh-NsA" secondAttribute="topMargin" constant="80" id="T9a-eh-qxY">
                                 <variation key="heightClass=regular-widthClass=compact" constant="435"/>
                             </constraint>
+                            <constraint firstItem="tjC-0F-6M4" firstAttribute="centerX" secondItem="s9x-wh-NsA" secondAttribute="centerX" id="Tq9-5b-9Ad"/>
                             <constraint firstItem="Z3i-2G-7hc" firstAttribute="trailing" secondItem="tjC-0F-6M4" secondAttribute="trailing" constant="50" id="UW5-Om-5Tr"/>
                             <constraint firstItem="tjC-0F-6M4" firstAttribute="leading" secondItem="SJ0-TY-gQB" secondAttribute="trailing" constant="150" id="XF4-UI-iYA"/>
                             <constraint firstItem="SJ0-TY-gQB" firstAttribute="top" secondItem="Z3i-2G-7hc" secondAttribute="top" constant="35" id="Yy9-5X-WbY"/>
                             <constraint firstItem="tjC-0F-6M4" firstAttribute="centerX" secondItem="s9x-wh-NsA" secondAttribute="centerX" id="ZVy-ga-Xjc"/>
+                            <constraint firstItem="SJ0-TY-gQB" firstAttribute="centerX" secondItem="s9x-wh-NsA" secondAttribute="centerX" id="a2E-Zw-eKi"/>
+                            <constraint firstItem="SJ0-TY-gQB" firstAttribute="top" secondItem="Z3i-2G-7hc" secondAttribute="top" constant="40" id="bj4-Y4-gRw"/>
+                            <constraint firstItem="SJ0-TY-gQB" firstAttribute="leading" secondItem="Z3i-2G-7hc" secondAttribute="leading" constant="30" id="cS8-dV-cbJ"/>
                             <constraint firstItem="tjC-0F-6M4" firstAttribute="leading" secondItem="SJ0-TY-gQB" secondAttribute="trailing" constant="70" id="fnp-X2-q1T">
                                 <variation key="heightClass=compact-widthClass=compact" constant="100"/>
                             </constraint>
                             <constraint firstItem="SJ0-TY-gQB" firstAttribute="top" secondItem="Z3i-2G-7hc" secondAttribute="top" constant="35" id="ivE-mH-uOV"/>
+                            <constraint firstItem="SJ0-TY-gQB" firstAttribute="top" secondItem="Z3i-2G-7hc" secondAttribute="top" constant="29" id="pGB-Wi-Oco"/>
                             <constraint firstItem="SJ0-TY-gQB" firstAttribute="leading" secondItem="Z3i-2G-7hc" secondAttribute="leading" constant="37" id="pS1-Vw-wb9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Z3i-2G-7hc"/>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="19d-JU-tnO"/>
+                                <exclude reference="1g0-m1-CCP"/>
                                 <exclude reference="8Ng-yj-VIp"/>
                                 <exclude reference="CaI-12-38q"/>
+                                <exclude reference="OY7-Ek-hz4"/>
+                                <exclude reference="QSJ-jT-L8g"/>
                                 <exclude reference="UW5-Om-5Tr"/>
                                 <exclude reference="58M-Ko-IC3"/>
                                 <exclude reference="OKg-ZQ-a5Q"/>
+                                <exclude reference="RSt-Qy-flg"/>
                                 <exclude reference="SYI-UY-6LD"/>
                                 <exclude reference="Yy9-5X-WbY"/>
+                                <exclude reference="a2E-Zw-eKi"/>
+                                <exclude reference="bj4-Y4-gRw"/>
+                                <exclude reference="cS8-dV-cbJ"/>
                                 <exclude reference="ivE-mH-uOV"/>
+                                <exclude reference="pGB-Wi-Oco"/>
                                 <exclude reference="pS1-Vw-wb9"/>
                                 <exclude reference="4tL-JL-c4k"/>
+                                <exclude reference="7zd-r9-ONi"/>
+                                <exclude reference="Cah-lL-aBu"/>
                                 <exclude reference="G5y-ol-AVy"/>
                                 <exclude reference="T9a-eh-qxY"/>
+                                <exclude reference="Tq9-5b-9Ad"/>
                                 <exclude reference="XF4-UI-iYA"/>
                                 <exclude reference="ZVy-ga-Xjc"/>
                                 <exclude reference="fnp-X2-q1T"/>
@@ -211,9 +241,24 @@
                                 <include reference="19d-JU-tnO"/>
                                 <include reference="8Ng-yj-VIp"/>
                                 <include reference="58M-Ko-IC3"/>
+                                <include reference="a2E-Zw-eKi"/>
                                 <include reference="ivE-mH-uOV"/>
+                                <include reference="7zd-r9-ONi"/>
                                 <exclude reference="T9a-eh-qxY"/>
                                 <include reference="ZVy-ga-Xjc"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="1g0-m1-CCP"/>
+                                <include reference="OY7-Ek-hz4"/>
+                                <exclude reference="QSJ-jT-L8g"/>
+                                <include reference="RSt-Qy-flg"/>
+                                <include reference="bj4-Y4-gRw"/>
+                                <exclude reference="cS8-dV-cbJ"/>
+                                <exclude reference="pGB-Wi-Oco"/>
+                                <exclude reference="Cah-lL-aBu"/>
+                                <include reference="Tq9-5b-9Ad"/>
                             </mask>
                         </variation>
                     </view>
@@ -228,7 +273,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PLq-gZ-v56" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2795.625" y="744.71830985915494"/>
+            <point key="canvasLocation" x="-2796.09375" y="744.50951683748167"/>
         </scene>
         <!--Recipes-->
         <scene sceneID="GpG-GT-ovT">
