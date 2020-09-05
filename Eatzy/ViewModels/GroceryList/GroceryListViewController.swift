@@ -191,8 +191,3 @@ extension GroceryListViewController: UITableViewDelegate{
     
 }
 
-//extension GroceryListViewController:UIPopoverPresentationControllerDelegate{
-//    override func prepare(for segue:){
-//
-//    }
-//}
