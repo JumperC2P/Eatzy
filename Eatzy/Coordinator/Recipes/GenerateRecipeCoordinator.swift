@@ -29,14 +29,11 @@ class GenerateRecipeCoordinator: Coordinator {
         navigationController.pushViewController(generateViewController, animated: true)
     }
     
-    // find child coordinator in the array
-    func childDidFinish(_ child: Coordinator?) {
-        for (index, coordinator) in childCoordinators.enumerated() {
-            if coordinator === child {
-                childCoordinators.remove(at: index)
-                break
-            }
-        }
+    func showRecipeResult(){
+        let recipeResult = RecipeResultCoordinator(navigationController: navigationController)
+        recipeResult.parentCoordinator = self
+        childCoordinators.append(recipeResult)
+        recipeResult.start()
     }
     
     func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
@@ -45,6 +42,9 @@ class GenerateRecipeCoordinator: Coordinator {
         }
         if navigationController.viewControllers.contains(fromViewController){
             return
+        }
+        if let recipeResultViewController = fromViewController as? GeneratedRecipeViewController {
+            CoordinatorUtils.childDidFinish(childCoordinator: &childCoordinators, child: recipeResultViewController.coordinator)
         }
     }
 }

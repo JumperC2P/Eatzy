@@ -9,6 +9,7 @@
 import UIKit
 
 class GeneratedRecipeViewController: UIViewController, Storyboarded {
+    weak var coordinator: RecipeResultCoordinator?
 
     @IBOutlet weak var topRecipeImage: UIImageView!
     @IBOutlet weak var topRecipeTitle: UILabel!
@@ -35,16 +36,17 @@ class GeneratedRecipeViewController: UIViewController, Storyboarded {
     }
     
     @objc func tapTopRecipeView(sender : UITapGestureRecognizer) {
-        selectRecipe = topRecipe;
-        performSegue(withIdentifier: "RecipeInfo", sender: self)
+//        selectRecipe = topRecipe;
+//        performSegue(withIdentifier: "RecipeInfo", sender: self)
+        coordinator?.showRecipeInfo(recipe: topRecipe)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "RecipeInfo" {
-            let recipesController = segue.destination as! RecipeDetailController;
-            recipesController.recipe = selectRecipe;
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "RecipeInfo" {
+//            let recipesController = segue.destination as! RecipeDetailController;
+//            recipesController.recipe = selectRecipe;
+//        }
+//    }
     @IBAction func regenerateRecipes(_ sender: Any) {
         
         // create the alert
@@ -86,8 +88,7 @@ extension GeneratedRecipeViewController: UITableViewDataSource, UITableViewDeleg
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        selectRecipe = RecipesData.otherRecipes[indexPath.row];
-        performSegue(withIdentifier: "RecipeInfo", sender: self)
+        coordinator?.showRecipeInfo(recipe: RecipesData.otherRecipes[indexPath.row])
     }
 }
 

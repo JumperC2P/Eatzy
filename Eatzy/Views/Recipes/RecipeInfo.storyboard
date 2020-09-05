@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fCx-8s-abv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -119,26 +119,26 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pnM-lp-w6f">
-                                                                            <rect key="frame" x="30" y="14.5" width="31" height="15"/>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="pnM-lp-w6f">
+                                                                            <rect key="frame" x="30" y="14.5" width="31" height="14.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8r-mN-h3M">
-                                                                            <rect key="frame" x="166" y="14.5" width="43" height="15"/>
+                                                                            <rect key="frame" x="201" y="14.5" width="43" height="15"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="units" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pP3-Zm-qqv">
-                                                                            <rect key="frame" x="229" y="14.5" width="28" height="15"/>
+                                                                            <rect key="frame" x="254" y="14.5" width="28" height="15"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qwV-kE-CQe">
-                                                                            <rect key="frame" x="325" y="11" width="20" height="22"/>
+                                                                            <rect key="frame" x="344" y="11" width="1" height="22"/>
                                                                             <state key="normal" image="circle"/>
                                                                             <connections>
                                                                                 <action selector="addItemToGroceryList:" destination="S0C-6S-xmv" eventType="touchUpInside" id="U9F-A2-9Hu"/>
@@ -151,8 +151,8 @@
                                                                         <constraint firstItem="qwV-kE-CQe" firstAttribute="centerY" secondItem="Mgg-zc-INo" secondAttribute="centerY" id="Mhw-ax-LPF"/>
                                                                         <constraint firstItem="qwV-kE-CQe" firstAttribute="trailing" secondItem="Mgg-zc-INo" secondAttribute="trailingMargin" constant="-15" id="SoL-9v-cI5"/>
                                                                         <constraint firstItem="t8r-mN-h3M" firstAttribute="centerY" secondItem="Mgg-zc-INo" secondAttribute="centerY" id="ilW-id-4fK"/>
-                                                                        <constraint firstItem="pP3-Zm-qqv" firstAttribute="leading" secondItem="t8r-mN-h3M" secondAttribute="trailing" constant="20" id="meO-Ts-kEy"/>
-                                                                        <constraint firstItem="t8r-mN-h3M" firstAttribute="centerX" secondItem="Mgg-zc-INo" secondAttribute="centerX" id="pxu-LV-2dc"/>
+                                                                        <constraint firstItem="pP3-Zm-qqv" firstAttribute="leading" secondItem="t8r-mN-h3M" secondAttribute="trailing" constant="10" id="meO-Ts-kEy"/>
+                                                                        <constraint firstItem="t8r-mN-h3M" firstAttribute="centerX" secondItem="Mgg-zc-INo" secondAttribute="centerX" constant="35" id="pxu-LV-2dc"/>
                                                                         <constraint firstItem="pnM-lp-w6f" firstAttribute="leading" secondItem="Mgg-zc-INo" secondAttribute="leadingMargin" constant="15" id="r5k-KW-LEf"/>
                                                                     </constraints>
                                                                 </tableViewCellContentView>

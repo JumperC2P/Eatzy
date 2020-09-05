@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ImP-kl-GaW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -320,20 +320,11 @@
                         <outlet property="topRecipeTime" destination="gXY-qw-r4f" id="fQF-w3-Q0v"/>
                         <outlet property="topRecipeTitle" destination="ZL8-AK-mTv" id="1bd-e8-hlA"/>
                         <outlet property="topRecipeView" destination="xcn-ef-Iqf" id="PXS-5o-MiT"/>
-                        <segue destination="RT7-fj-fQO" kind="show" identifier="RecipeInfo" id="IAe-eP-AmP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lID-yY-oDl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="136.33004926108376"/>
-        </scene>
-        <!--RecipeInfo-->
-        <scene sceneID="NMm-PL-uEH">
-            <objects>
-                <viewControllerPlaceholder storyboardName="RecipeInfo" id="RT7-fj-fQO" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2hs-P5-3jR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="990" y="43"/>
         </scene>
     </scenes>
     <resources>

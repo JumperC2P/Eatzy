@@ -25,8 +25,6 @@ class FavoritesCoordinator: Coordinator {
     func start() {
         let favoriteViewController = FavoritesTableViewController.instantiate(storyboardName: "Favorites")
         favoriteViewController.coordinator = self
-        let recipeInfoViewController = RecipeDetailController.instantiate(storyboardName: "RecipeInfo")
-        
         let masterViewController = UINavigationController(rootViewController: favoriteViewController)
 
         splitViewController.tabBarItem  = UITabBarItem(title: "Favorite", image: UIImage(named: "favorite"), tag: 2)
