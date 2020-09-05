@@ -3,7 +3,7 @@
 //  Eatzy
 //
 //  Created by Michael Macbook Pro on 30/7/20.
-//  Copyright © 2020 Michael Yue. All rights reserved.
+//  Copyright © 2020 RMIT-2020IPSE-G12. All rights reserved.
 //
 
 import UIKit

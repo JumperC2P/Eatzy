@@ -3,7 +3,7 @@
 //  Eatzy
 //
 //  Created by HankLee on 31/8/20.
-//  Copyright © 2020 Michael Yue. All rights reserved.
+//  Copyright © 2020 RMIT-2020IPSE-G12. All rights reserved.
 //
 
 import Foundation
@@ -30,14 +30,10 @@ class FetchURLImages {
     static func setImageToImageView(imageUrl urlString: String, imageView: UIImageView) {
         fetchImage(from: urlString) {(imageData) in
             if let data = imageData {
-                // referenced imageView from main thread
-                // as iOS SDK warns not to use images from
-                // a background thread
                 DispatchQueue.main.async {
                     imageView.image = UIImage(data: data)
                 }
             } else {
-                    // show as an alert if you want to
                 print("Error loading image");
             }
         }

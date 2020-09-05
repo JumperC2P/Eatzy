@@ -3,7 +3,7 @@
 //  Eatzy
 //
 //  Created by Yunying Ma on 2020/8/16.
-//  Copyright © 2020 Michael Yue. All rights reserved.
+//  Copyright © 2020 RMIT-2020IPSE-G12. All rights reserved.
 //
 
 import Foundation

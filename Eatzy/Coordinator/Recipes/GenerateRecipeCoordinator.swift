@@ -43,7 +43,7 @@ class GenerateRecipeCoordinator: Coordinator {
         if navigationController.viewControllers.contains(fromViewController){
             return
         }
-        if let recipeResultViewController = fromViewController as? GeneratedRecipeViewController {
+        if let recipeResultViewController = fromViewController as? RecipeResultViewController {
             CoordinatorUtils.childDidFinish(childCoordinator: &childCoordinators, child: recipeResultViewController.coordinator)
         }
     }

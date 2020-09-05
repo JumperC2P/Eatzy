@@ -3,7 +3,7 @@
 //  Eatzy
 //
 //  Created by Michael Macbook Pro on 1/9/20.
-//  Copyright © 2020 Michael Yue. All rights reserved.
+//  Copyright © 2020 RMIT-2020IPSE-G12. All rights reserved.
 //
 
 import UIKit
@@ -25,14 +25,6 @@ protocol ToolbarPickerViewDelegate: class {
 
 class ToolbarPickerView: UIPickerView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
-    
     public private(set) var toolbar1: UIToolbar?
     public private(set) var toolbar2: UIToolbar?
     public private(set) var toolbar3: UIToolbar?

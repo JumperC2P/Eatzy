@@ -3,12 +3,12 @@
 //  Eatzy
 //
 //  Created by HankLee on 31/8/20.
-//  Copyright © 2020 Michael Yue. All rights reserved.
+//  Copyright © 2020 RMIT-2020IPSE-G12. All rights reserved.
 //
 
 import UIKit
 
-class GeneratedRecipeViewController: UIViewController, Storyboarded {
+class RecipeResultViewController: UIViewController, Storyboarded {
     weak var coordinator: RecipeResultCoordinator?
 
     @IBOutlet weak var topRecipeImage: UIImageView!
@@ -36,17 +36,9 @@ class GeneratedRecipeViewController: UIViewController, Storyboarded {
     }
     
     @objc func tapTopRecipeView(sender : UITapGestureRecognizer) {
-//        selectRecipe = topRecipe;
-//        performSegue(withIdentifier: "RecipeInfo", sender: self)
         coordinator?.showRecipeInfo(recipe: topRecipe)
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "RecipeInfo" {
-//            let recipesController = segue.destination as! RecipeDetailController;
-//            recipesController.recipe = selectRecipe;
-//        }
-//    }
     @IBAction func regenerateRecipes(_ sender: Any) {
         
         // create the alert
@@ -74,7 +66,7 @@ class GeneratedRecipeViewController: UIViewController, Storyboarded {
     
 }
 
-extension GeneratedRecipeViewController: UITableViewDataSource, UITableViewDelegate {
+extension RecipeResultViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return RecipesData.otherRecipes.count;

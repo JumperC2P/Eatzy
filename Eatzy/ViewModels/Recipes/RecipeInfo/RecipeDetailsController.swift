@@ -3,7 +3,7 @@
 //  Eatzy
 //
 //  Created by HankLee on 31/8/20.
-//  Copyright © 2020 Michael Yue. All rights reserved.
+//  Copyright © 2020 RMIT-2020IPSE-G12. All rights reserved.
 //
 
 import UIKit
