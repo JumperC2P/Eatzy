@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iWe-nI-gz1">
-    <device id="ipad9_7" orientation="landscape">
+    <device id="ipad10_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -13,16 +13,16 @@
         <!--Generate Recipe-->
         <scene sceneID="1Fi-MS-Xoj">
             <objects>
-                <viewController id="iWe-nI-gz1" userLabel="Generate Recipe" customClass="PickerViewController" customModule="Eatzy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GenerateRecipeViewController" id="iWe-nI-gz1" userLabel="Generate Recipe" customClass="GenerateRecipeViewController" customModule="Eatzy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s9x-wh-NsA">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="51" translatesAutoresizingMaskIntoConstraints="NO" id="SJ0-TY-gQB">
-                                <rect key="frame" x="90" y="140" width="844" height="378"/>
+                                <rect key="frame" x="90" y="140" width="654" height="378"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KIo-k8-hnB" customClass="RecipeViewController" customModule="GenerateRecipe">
-                                        <rect key="frame" x="0.0" y="0.0" width="844" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="654" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuisines:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLg-8M-ufN">
                                                 <rect key="frame" x="0.0" y="0.0" width="120" height="30"/>
@@ -35,7 +35,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="click here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GtK-8A-gwb">
-                                                <rect key="frame" x="170" y="0.0" width="674" height="30"/>
+                                                <rect key="frame" x="170" y="0.0" width="484" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -43,7 +43,7 @@
                                         <variation key="heightClass=regular-widthClass=regular" spacing="50"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wAL-QO-UvZ">
-                                        <rect key="frame" x="0.0" y="116" width="844" height="30"/>
+                                        <rect key="frame" x="0.0" y="116" width="654" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diets:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGB-nV-62c">
                                                 <rect key="frame" x="0.0" y="0.0" width="120" height="30"/>
@@ -56,7 +56,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="click here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3yt-uO-7hU">
-                                                <rect key="frame" x="170" y="0.0" width="674" height="30"/>
+                                                <rect key="frame" x="170" y="0.0" width="484" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -64,7 +64,7 @@
                                         <variation key="heightClass=regular-widthClass=regular" spacing="50"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="99F-fn-Ry3">
-                                        <rect key="frame" x="0.0" y="232" width="844" height="30"/>
+                                        <rect key="frame" x="0.0" y="232" width="654" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Types:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXQ-3O-z6U">
                                                 <rect key="frame" x="0.0" y="0.0" width="120" height="30"/>
@@ -76,7 +76,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="click here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WOJ-xC-ib7">
-                                                <rect key="frame" x="170" y="0.0" width="674" height="30"/>
+                                                <rect key="frame" x="170" y="0.0" width="484" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -84,7 +84,7 @@
                                         <variation key="heightClass=regular-widthClass=regular" spacing="50"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="Xjp-PV-daD">
-                                        <rect key="frame" x="0.0" y="348" width="844" height="30"/>
+                                        <rect key="frame" x="0.0" y="348" width="654" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Intolerances:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hf-CY-PAp">
                                                 <rect key="frame" x="0.0" y="0.0" width="110" height="30"/>
@@ -93,7 +93,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="click here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mng-L2-pTi">
-                                                <rect key="frame" x="167" y="0.0" width="677" height="30"/>
+                                                <rect key="frame" x="167" y="0.0" width="487" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -106,7 +106,7 @@
                                 <variation key="heightClass=regular-widthClass=regular" spacing="86"/>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tjC-0F-6M4">
-                                <rect key="frame" x="449.5" y="589" width="125" height="119"/>
+                                <rect key="frame" x="354.5" y="933" width="125" height="119"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="122" id="0kF-6G-OId"/>
                                     <constraint firstAttribute="width" constant="102" id="4jl-1l-qKv"/>

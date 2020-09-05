@@ -9,8 +9,10 @@
 import UIKit
 import Foundation
 
-class GroceryListViewController: UIViewController, UIPopoverPresentationControllerDelegate {
-
+class GroceryListViewController: UIViewController, UIPopoverPresentationControllerDelegate, Storyboarded {
+    
+    var coordinator: GroceryListCoordinator?
+    
     var selectArr = [String]()
     var editIndex: Int?
     @IBOutlet weak var AddItemTextField: UITextField!
@@ -35,6 +37,11 @@ class GroceryListViewController: UIViewController, UIPopoverPresentationControll
             newName.text = nil
         }
         
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        navigationItem.title = "Grocery List"
+        super.viewDidDisappear(animated)
     }
 
     override func viewDidLoad() {

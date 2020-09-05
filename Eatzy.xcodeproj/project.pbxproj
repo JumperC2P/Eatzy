@@ -7,9 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E3FD331250235D500B1E3DD /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3FD330250235D500B1E3DD /* MainTabBarController.swift */; };
+		5E3FD3342502393600B1E3DD /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3FD3332502393600B1E3DD /* Storyboarded.swift */; };
+		5E3FD33825023EA000B1E3DD /* GenerateRecipeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3FD33725023EA000B1E3DD /* GenerateRecipeCoordinator.swift */; };
+		5E3FD33D2502419100B1E3DD /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3FD33C2502419100B1E3DD /* ProfileViewController.swift */; };
+		5E3FD33F250257A100B1E3DD /* GroceryListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3FD33E250257A100B1E3DD /* GroceryListCoordinator.swift */; };
+		5E3FD34125025A2000B1E3DD /* FavoritesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3FD34025025A2000B1E3DD /* FavoritesCoordinator.swift */; };
+		5E3FD34325025AD900B1E3DD /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3FD34225025AD900B1E3DD /* ProfileCoordinator.swift */; };
+		5E3FD345250313D400B1E3DD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3FD344250313D400B1E3DD /* Coordinator.swift */; };
+		5E3FD3482503157B00B1E3DD /* MainTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3FD3472503157B00B1E3DD /* MainTabBarCoordinator.swift */; };
 		5EAF0A5F24D262F400483E09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAF0A5E24D262F400483E09 /* AppDelegate.swift */; };
-		5EAF0A6124D262F400483E09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAF0A6024D262F400483E09 /* ViewController.swift */; };
-		5EAF0A6424D262F400483E09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EAF0A6224D262F400483E09 /* Main.storyboard */; };
 		5EAF0A6924D262F600483E09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EAF0A6724D262F600483E09 /* LaunchScreen.storyboard */; };
 		8937D30124FCD1130056D677 /* GeneratedRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8937D30024FCD1130056D677 /* GeneratedRecipeViewController.swift */; };
 		893A4F2F24FD08A900538539 /* RecipeDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893A4F2E24FD08A900538539 /* RecipeDetailsController.swift */; };
@@ -29,7 +36,7 @@
 		89778E9A24F4218C0025EE40 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89778E9924F4218C0025EE40 /* Profile.storyboard */; };
 		89778E9D24F422190025EE40 /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89778E9B24F422190025EE40 /* Favorites.storyboard */; };
 		89778E9F24F4224E0025EE40 /* GroceryList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89778E9E24F4224E0025EE40 /* GroceryList.storyboard */; };
-		89778EA224F4227F0025EE40 /* EatzyChef.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89778EA024F4227F0025EE40 /* EatzyChef.storyboard */; };
+		89778EA224F4227F0025EE40 /* GenerateRecipe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89778EA024F4227F0025EE40 /* GenerateRecipe.storyboard */; };
 		89778EA624F424E20025EE40 /* Recipes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89778EA524F424E20025EE40 /* Recipes.storyboard */; };
 		89778EC124F4DB070025EE40 /* GroceryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89778EBD24F4DB060025EE40 /* GroceryListViewController.swift */; };
 		89778EC324F4DB070025EE40 /* GroceryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89778EBF24F4DB060025EE40 /* GroceryViewModel.swift */; };
@@ -37,15 +44,22 @@
 		89778ECB24F4DB4C0025EE40 /* GroceryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89778EC824F4DB4C0025EE40 /* GroceryData.swift */; };
 		89778ECD24F4DB4C0025EE40 /* Grocery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89778ECA24F4DB4C0025EE40 /* Grocery.swift */; };
 		89906C3724FF719E002A6B5A /* recipes_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 89906C3624FF719E002A6B5A /* recipes_data.json */; };
-		89C60B8324FBE1570001E610 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C60B8224FBE1560001E610 /* PickerViewController.swift */; };
+		89C60B8324FBE1570001E610 /* GenerateRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C60B8224FBE1560001E610 /* GenerateRecipeViewController.swift */; };
 		89DA30E224FF7D4E0089DE3F /* RecipeInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89DA30E124FF7D4E0089DE3F /* RecipeInfo.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E3FD330250235D500B1E3DD /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		5E3FD3332502393600B1E3DD /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		5E3FD33725023EA000B1E3DD /* GenerateRecipeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateRecipeCoordinator.swift; sourceTree = "<group>"; };
+		5E3FD33C2502419100B1E3DD /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		5E3FD33E250257A100B1E3DD /* GroceryListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListCoordinator.swift; sourceTree = "<group>"; };
+		5E3FD34025025A2000B1E3DD /* FavoritesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCoordinator.swift; sourceTree = "<group>"; };
+		5E3FD34225025AD900B1E3DD /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		5E3FD344250313D400B1E3DD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		5E3FD3472503157B00B1E3DD /* MainTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarCoordinator.swift; sourceTree = "<group>"; };
 		5EAF0A5B24D262F400483E09 /* Eatzy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eatzy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EAF0A5E24D262F400483E09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5EAF0A6024D262F400483E09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5EAF0A6324D262F400483E09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5EAF0A6824D262F600483E09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EAF0A6A24D262F600483E09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8937D30024FCD1130056D677 /* GeneratedRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedRecipeViewController.swift; sourceTree = "<group>"; };
@@ -66,7 +80,7 @@
 		89778E9924F4218C0025EE40 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Profile.storyboard; path = Eatzy/Views/Profile/Profile.storyboard; sourceTree = SOURCE_ROOT; };
 		89778E9C24F422190025EE40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Favorites.storyboard; sourceTree = "<group>"; };
 		89778E9E24F4224E0025EE40 /* GroceryList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = GroceryList.storyboard; path = Eatzy/Views/GroceryList/GroceryList.storyboard; sourceTree = SOURCE_ROOT; };
-		89778EA124F4227F0025EE40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/EatzyChef.storyboard; sourceTree = "<group>"; };
+		89778EA124F4227F0025EE40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/GenerateRecipe.storyboard; sourceTree = "<group>"; };
 		89778EA524F424E20025EE40 /* Recipes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Recipes.storyboard; sourceTree = "<group>"; };
 		89778EBD24F4DB060025EE40 /* GroceryListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryListViewController.swift; sourceTree = "<group>"; };
 		89778EBF24F4DB060025EE40 /* GroceryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryViewModel.swift; sourceTree = "<group>"; };
@@ -74,7 +88,7 @@
 		89778EC824F4DB4C0025EE40 /* GroceryData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryData.swift; sourceTree = "<group>"; };
 		89778ECA24F4DB4C0025EE40 /* Grocery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grocery.swift; sourceTree = "<group>"; };
 		89906C3624FF719E002A6B5A /* recipes_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recipes_data.json; sourceTree = "<group>"; };
-		89C60B8224FBE1560001E610 /* PickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		89C60B8224FBE1560001E610 /* GenerateRecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateRecipeViewController.swift; sourceTree = "<group>"; };
 		89DA30E124FF7D4E0089DE3F /* RecipeInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RecipeInfo.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +113,27 @@
 			path = MyFavouriteRecipes;
 			sourceTree = "<group>";
 		};
+		5E3FD3322502390400B1E3DD /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				5E3FD3472503157B00B1E3DD /* MainTabBarCoordinator.swift */,
+				89F59F77250361B9007EE064 /* Recipes */,
+				89F59F76250361B1007EE064 /* GroceryList */,
+				89F59F75250361AC007EE064 /* Profile */,
+				89F59F74250361A5007EE064 /* Favorites */,
+				5E3FD344250313D400B1E3DD /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		5E3FD33B2502416F00B1E3DD /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				5E3FD33C2502419100B1E3DD /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		5EAF0A5224D262F400483E09 = {
 			isa = PBXGroup;
 			children = (
@@ -120,7 +155,7 @@
 			children = (
 				896D683F2500B44E00EC0A4A /* Assets.xcassets */,
 				89906C3624FF719E002A6B5A /* recipes_data.json */,
-				89778EC524F4DB180025EE40 /* Constants */,
+				5E3FD3322502390400B1E3DD /* Coordinator */,
 				89778E9624F41E040025EE40 /* ViewModels */,
 				89778E9524F41DFC0025EE40 /* Models */,
 				89778E9424F41DCF0025EE40 /* Views */,
@@ -171,7 +206,7 @@
 		893A4F5624FF483C00538539 /* GenerateRecipe */ = {
 			isa = PBXGroup;
 			children = (
-				89C60B8224FBE1560001E610 /* PickerViewController.swift */,
+				89C60B8224FBE1560001E610 /* GenerateRecipeViewController.swift */,
 				893A4F5424FF483600538539 /* ToolbarPickerView.swift */,
 			);
 			path = GenerateRecipe;
@@ -188,11 +223,11 @@
 		89778E9424F41DCF0025EE40 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5E3FD3332502393600B1E3DD /* Storyboarded.swift */,
 				89778EBC24F4DADF0025EE40 /* Favorites */,
 				89778EBB24F4DAD30025EE40 /* Profile */,
 				89778EBA24F4DAC80025EE40 /* GroceryList */,
 				89778EA324F422880025EE40 /* Recipes */,
-				5EAF0A6224D262F400483E09 /* Main.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -210,10 +245,12 @@
 		89778E9624F41E040025EE40 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				5E3FD330250235D500B1E3DD /* MainTabBarController.swift */,
 				893A4F3324FD228600538539 /* Utilities */,
 				89C60B8124FBE11D0001E610 /* Recipes */,
 				89778EB924F4DA350025EE40 /* GroceryList */,
-				5EAF0A6024D262F400483E09 /* ViewController.swift */,
+				10171AFC24FFD4420037E7D6 /* MyFavouriteRecipes */,
+				5E3FD33B2502416F00B1E3DD /* Profile */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -221,7 +258,7 @@
 		89778EA324F422880025EE40 /* Recipes */ = {
 			isa = PBXGroup;
 			children = (
-				89778EA024F4227F0025EE40 /* EatzyChef.storyboard */,
+				89778EA024F4227F0025EE40 /* GenerateRecipe.storyboard */,
 				89778EA524F424E20025EE40 /* Recipes.storyboard */,
 				89DA30E124FF7D4E0089DE3F /* RecipeInfo.storyboard */,
 			);
@@ -271,20 +308,44 @@
 			path = Favorites;
 			sourceTree = "<group>";
 		};
-		89778EC524F4DB180025EE40 /* Constants */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Constants;
-			sourceTree = "<group>";
-		};
 		89C60B8124FBE11D0001E610 /* Recipes */ = {
 			isa = PBXGroup;
 			children = (
-				10171AFC24FFD4420037E7D6 /* MyFavouriteRecipes */,
-				893A4F4124FDEC6E00538539 /* RecipeInfo */,
-				893A4F4024FDEC6200538539 /* GeneratedRecipes */,
 				893A4F5624FF483C00538539 /* GenerateRecipe */,
+				893A4F4024FDEC6200538539 /* GeneratedRecipes */,
+				893A4F4124FDEC6E00538539 /* RecipeInfo */,
+			);
+			path = Recipes;
+			sourceTree = "<group>";
+		};
+		89F59F74250361A5007EE064 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				5E3FD34025025A2000B1E3DD /* FavoritesCoordinator.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		89F59F75250361AC007EE064 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				5E3FD34225025AD900B1E3DD /* ProfileCoordinator.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		89F59F76250361B1007EE064 /* GroceryList */ = {
+			isa = PBXGroup;
+			children = (
+				5E3FD33E250257A100B1E3DD /* GroceryListCoordinator.swift */,
+			);
+			path = GroceryList;
+			sourceTree = "<group>";
+		};
+		89F59F77250361B9007EE064 /* Recipes */ = {
+			isa = PBXGroup;
+			children = (
+				5E3FD33725023EA000B1E3DD /* GenerateRecipeCoordinator.swift */,
 			);
 			path = Recipes;
 			sourceTree = "<group>";
@@ -353,8 +414,7 @@
 				89778EA624F424E20025EE40 /* Recipes.storyboard in Resources */,
 				896D68402500B44E00EC0A4A /* Assets.xcassets in Resources */,
 				89DA30E224FF7D4E0089DE3F /* RecipeInfo.storyboard in Resources */,
-				5EAF0A6424D262F400483E09 /* Main.storyboard in Resources */,
-				89778EA224F4227F0025EE40 /* EatzyChef.storyboard in Resources */,
+				89778EA224F4227F0025EE40 /* GenerateRecipe.storyboard in Resources */,
 				89778E9D24F422190025EE40 /* Favorites.storyboard in Resources */,
 				89906C3724FF719E002A6B5A /* recipes_data.json in Resources */,
 			);
@@ -367,42 +427,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EAF0A6124D262F400483E09 /* ViewController.swift in Sources */,
 				893A4F3924FD4F2800538539 /* RecipesData.swift in Sources */,
+				5E3FD345250313D400B1E3DD /* Coordinator.swift in Sources */,
 				893A4F3224FD0ECE00538539 /* Recipe.swift in Sources */,
 				89778ECB24F4DB4C0025EE40 /* GroceryData.swift in Sources */,
 				893A4F3B24FD51EF00538539 /* RecipeResponse.swift in Sources */,
 				89778EC324F4DB070025EE40 /* GroceryViewModel.swift in Sources */,
+				5E3FD331250235D500B1E3DD /* MainTabBarController.swift in Sources */,
 				896D68462500C20500EC0A4A /* DetailViewController.swift in Sources */,
 				5EAF0A5F24D262F400483E09 /* AppDelegate.swift in Sources */,
+				5E3FD3482503157B00B1E3DD /* MainTabBarCoordinator.swift in Sources */,
 				8937D30124FCD1130056D677 /* GeneratedRecipeViewController.swift in Sources */,
 				896D68492500CC1D00EC0A4A /* FavoriteRecipesData.swift in Sources */,
 				893A4F5324FE253A00538539 /* StepCell.swift in Sources */,
 				893A4F3F24FD618200538539 /* RecipeViewCell.swift in Sources */,
 				89778EC124F4DB070025EE40 /* GroceryListViewController.swift in Sources */,
-				89C60B8324FBE1570001E610 /* PickerViewController.swift in Sources */,
+				89C60B8324FBE1570001E610 /* GenerateRecipeViewController.swift in Sources */,
 				896D68442500C19900EC0A4A /* FavoritesViewCell.swift in Sources */,
 				893A4F4324FDEC8E00538539 /* IngredientTableViewCell.swift in Sources */,
 				893A4F5524FF483600538539 /* ToolbarPickerView.swift in Sources */,
+				5E3FD33D2502419100B1E3DD /* ProfileViewController.swift in Sources */,
 				89778EC424F4DB070025EE40 /* AddItemViewController.swift in Sources */,
 				893A4F2F24FD08A900538539 /* RecipeDetailsController.swift in Sources */,
 				893A4F3524FD229900538539 /* FetchURLImages.swift in Sources */,
 				89778ECD24F4DB4C0025EE40 /* Grocery.swift in Sources */,
 				896D68422500C18100EC0A4A /* FavoritesTableViewController.swift in Sources */,
+				5E3FD3342502393600B1E3DD /* Storyboarded.swift in Sources */,
+				5E3FD34125025A2000B1E3DD /* FavoritesCoordinator.swift in Sources */,
+				5E3FD33F250257A100B1E3DD /* GroceryListCoordinator.swift in Sources */,
+				5E3FD34325025AD900B1E3DD /* ProfileCoordinator.swift in Sources */,
+				5E3FD33825023EA000B1E3DD /* GenerateRecipeCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5EAF0A6224D262F400483E09 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5EAF0A6324D262F400483E09 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5EAF0A6724D262F600483E09 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -419,12 +479,12 @@
 			name = Favorites.storyboard;
 			sourceTree = "<group>";
 		};
-		89778EA024F4227F0025EE40 /* EatzyChef.storyboard */ = {
+		89778EA024F4227F0025EE40 /* GenerateRecipe.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				89778EA124F4227F0025EE40 /* Base */,
 			);
-			name = EatzyChef.storyboard;
+			name = GenerateRecipe.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

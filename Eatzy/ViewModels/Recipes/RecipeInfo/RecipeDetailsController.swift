@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RecipeDetailController: UIViewController{
+class RecipeDetailController: UIViewController, Storyboarded {
     
     var isFavorited : Bool = false;
     @IBOutlet weak var favoriteButton: UIBarButtonItem!
@@ -27,8 +27,6 @@ class RecipeDetailController: UIViewController{
         
         // Do any additional setup after loading the view.
         if from == "Favorites" {
-//            favoriteButton.isEnabled = false;
-//            favoriteButton.image = UIImage(named: "favorite-fill")
             self.navigationItem.rightBarButtonItem = nil;
         }else {
             if FavoriteRecipesData.isExistInFavorites(recipe: recipe){

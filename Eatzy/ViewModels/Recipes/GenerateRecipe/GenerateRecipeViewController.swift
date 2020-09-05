@@ -8,9 +8,9 @@
 
 import UIKit
 
-class PickerViewController: UIViewController {
+class GenerateRecipeViewController: UIViewController, Storyboarded {
+    weak var coordinator: GenerateRecipeCoordinator?
 
-    
     @IBOutlet weak var textFieldOne: UITextField!
     @IBOutlet weak var textFieldTwo: UITextField!
     @IBOutlet weak var textFieldThree: UITextField!
@@ -33,8 +33,16 @@ class PickerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+    }
+        
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        assert(coordinator != nil, "You must set a coordinator before presenting this view controller.")
+        
+        
         
         // pickerCuisine
         pickerCuisine.tag = 1
@@ -76,7 +84,7 @@ class PickerViewController: UIViewController {
     }
 }
 
-extension PickerViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+extension GenerateRecipeViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -127,7 +135,7 @@ extension PickerViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     }
 }
 
-extension PickerViewController: ToolbarPickerViewDelegate {
+extension GenerateRecipeViewController: ToolbarPickerViewDelegate {
     
     func didTapDone1() {
         let row1 = self.pickerCuisine.selectedRow(inComponent: 0)

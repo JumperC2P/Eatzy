@@ -138,7 +138,7 @@
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qwV-kE-CQe">
-                                                                            <rect key="frame" x="344" y="11" width="1" height="22"/>
+                                                                            <rect key="frame" x="325" y="11" width="20" height="22"/>
                                                                             <state key="normal" image="circle"/>
                                                                             <connections>
                                                                                 <action selector="addItemToGroceryList:" destination="S0C-6S-xmv" eventType="touchUpInside" id="U9F-A2-9Hu"/>
@@ -279,13 +279,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CCv-Op-uW1"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Recipe" id="dq5-fi-hPM">
+                    <navigationItem key="navigationItem" title="Recipe Details" id="dq5-fi-hPM">
                         <barButtonItem key="rightBarButtonItem" title="Favorite Button" image="favorite" id="rIl-kC-pbJ">
                             <connections>
                                 <action selector="tapOnFavorite:" destination="fCx-8s-abv" id="smR-Ic-q48"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <size key="freeformSize" width="375" height="1050"/>
                     <connections>
                         <outlet property="addAllButton" destination="f6f-bc-b9v" id="9db-BD-PmV"/>

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GeneratedRecipeViewController: UIViewController{
+class GeneratedRecipeViewController: UIViewController, Storyboarded {
 
     @IBOutlet weak var topRecipeImage: UIImageView!
     @IBOutlet weak var topRecipeTitle: UILabel!
