@@ -82,6 +82,9 @@ class GenerateRecipeViewController: UIViewController, Storyboarded {
 
         // Do any additional setup after loading the view.
     }
+    @IBAction func tapOnGenerateButton(_ sender: Any) {
+        coordinator?.showRecipeResult()
+    }
 }
 
 extension GenerateRecipeViewController: UIPickerViewDelegate, UIPickerViewDataSource {
@@ -133,6 +136,8 @@ extension GenerateRecipeViewController: UIPickerViewDelegate, UIPickerViewDataSo
             return
         }
     }
+    
+    
 }
 
 extension GenerateRecipeViewController: ToolbarPickerViewDelegate {
