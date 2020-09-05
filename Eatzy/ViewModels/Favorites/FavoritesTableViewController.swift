@@ -5,26 +5,27 @@
 //  Created by HankLee on 3/9/20.
 //  Copyright © 2020 RMIT-2020IPSE-G12. All rights reserved.
 //
-
 import UIKit
 
-class FavoritesTableViewController: UITableViewController, UISplitViewControllerDelegate {
+class FavoritesTableViewController: UITableViewController, UISplitViewControllerDelegate, Storyboarded {
+    weak var coordinator: FavoritesCoordinator?
     
     var selectedRecipe: Recipe = Recipe();
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Uncomment the following line to preserve selection between presentations
         self.clearsSelectionOnViewWillAppear = false
         self.splitViewController?.preferredDisplayMode = .allVisible;
         self.splitViewController?.delegate = self
-
+        
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        navigationItem.title = "Favorites"
         self.tableView.reloadData();
     }
     
@@ -35,9 +36,8 @@ class FavoritesTableViewController: UITableViewController, UISplitViewController
         // Return true to prevent UIKit from applying its default behavior
         return true
     }
-
+    
     // MARK: - Table view data source
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return FavoriteRecipesData.favoriteRecipes.count;
@@ -74,6 +74,5 @@ class FavoritesTableViewController: UITableViewController, UISplitViewController
         action.backgroundColor = #colorLiteral(red: 0.9294117647, green: 0.1725490196, blue: 0, alpha: 1)
         return action
     }
-
+    
 }
-

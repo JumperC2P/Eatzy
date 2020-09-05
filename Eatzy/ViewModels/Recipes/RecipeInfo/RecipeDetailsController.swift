@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RecipeDetailController: UIViewController{
+class RecipeDetailController: UIViewController, Storyboarded {
     
     var isFavorited : Bool = false;
     @IBOutlet weak var favoriteButton: UIBarButtonItem!
