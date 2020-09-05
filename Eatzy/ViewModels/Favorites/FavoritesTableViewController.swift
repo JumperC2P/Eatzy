@@ -19,9 +19,7 @@ class FavoritesTableViewController: UITableViewController, UISplitViewController
         self.clearsSelectionOnViewWillAppear = false
         self.splitViewController?.preferredDisplayMode = .allVisible;
         self.splitViewController?.delegate = self
-        
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -53,14 +51,7 @@ class FavoritesTableViewController: UITableViewController, UISplitViewController
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         coordinator?.showRecipe(recipe: FavoriteRecipesData.favoriteRecipes[indexPath.row], from: "Favorites")
-        
-        
-//        let dc = self.parent?.storyboard?.instantiateViewController(withIdentifier: "RecipeDetailController") as! RecipeDetailController;
-//        dc.recipe = FavoriteRecipesData.favoriteRecipes[indexPath.row];
-//        dc.from = "Favorites";
-//
-//
-//        self.parent?.splitViewController?.showDetailViewController(dc, sender: nil)
+
     }
     
     override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {

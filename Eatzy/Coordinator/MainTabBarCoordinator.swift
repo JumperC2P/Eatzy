@@ -47,8 +47,6 @@ class MainTabBarCoordinator: NSObject, Coordinator, UITabBarControllerDelegate {
         mainTabBarController.viewControllers = controllers
         mainTabBarController.tabBar.isTranslucent = false
         mainTabBarController.delegate = self
-        
-//        mainTabBarController.selectedViewController = GenerateRecipeViewController
-        
+
     }
 }

@@ -30,7 +30,7 @@ class RecipeResultCoordinator: Coordinator {
     }
     
     func start() {
-        let recipeResultViewController = GeneratedRecipeViewController.instantiate(storyboardName: "Recipes")
+        let recipeResultViewController = RecipeResultViewController.instantiate(storyboardName: "Recipes")
         recipeResultViewController.coordinator = self
         navigationController.pushViewController(recipeResultViewController, animated: true)
     }
