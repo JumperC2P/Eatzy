@@ -52,10 +52,15 @@ class FavoritesTableViewController: UITableViewController, UISplitViewController
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let dc = self.parent?.storyboard?.instantiateViewController(withIdentifier: "RecipeDetailController") as! RecipeDetailController;
-        dc.recipe = FavoriteRecipesData.favoriteRecipes[indexPath.row];
-        dc.from = "Favorites";
-        self.parent?.splitViewController?.showDetailViewController(dc, sender: nil)
+        coordinator?.showRecipe(recipe: FavoriteRecipesData.favoriteRecipes[indexPath.row], from: "Favorites")
+        
+        
+//        let dc = self.parent?.storyboard?.instantiateViewController(withIdentifier: "RecipeDetailController") as! RecipeDetailController;
+//        dc.recipe = FavoriteRecipesData.favoriteRecipes[indexPath.row];
+//        dc.from = "Favorites";
+//
+//
+//        self.parent?.splitViewController?.showDetailViewController(dc, sender: nil)
     }
     
     override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {

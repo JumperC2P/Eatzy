@@ -31,7 +31,7 @@ class MainTabBarCoordinator: NSObject, Coordinator, UITabBarControllerDelegate {
         
         generateRecipeCoordinator = GenerateRecipeCoordinator(navigationController: UINavigationController())
         groceryListCoordinator = GroceryListCoordinator(navigationController: UINavigationController())
-        favoriteCoordinator = FavoritesCoordinator(navigationController: UINavigationController())
+        favoriteCoordinator = FavoritesCoordinator(splitViewController: UISplitViewController())
         profileCoordinator = ProfileCoordinator(navigationController: UINavigationController())
         
         generateRecipeCoordinator?.start()
@@ -41,7 +41,7 @@ class MainTabBarCoordinator: NSObject, Coordinator, UITabBarControllerDelegate {
         
         controllers.append(generateRecipeCoordinator!.navigationController)
         controllers.append(groceryListCoordinator!.navigationController)
-        controllers.append(favoriteCoordinator!.navigationController)
+        controllers.append(favoriteCoordinator!.splitViewController)
         controllers.append(profileCoordinator!.navigationController)
         
         mainTabBarController.viewControllers = controllers
