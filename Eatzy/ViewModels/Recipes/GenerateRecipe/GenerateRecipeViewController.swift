@@ -41,9 +41,7 @@ class GenerateRecipeViewController: UIViewController, Storyboarded {
         super.viewDidLoad()
         
         assert(coordinator != nil, "You must set a coordinator before presenting this view controller.")
-        
-        
-        
+
         // pickerCuisine
         pickerCuisine.tag = 1
         self.textFieldOne.inputView = self.pickerCuisine

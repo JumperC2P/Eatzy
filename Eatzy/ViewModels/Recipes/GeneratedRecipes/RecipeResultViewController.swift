@@ -20,8 +20,6 @@ class RecipeResultViewController: UIViewController, Storyboarded {
     @IBOutlet weak var generateButton: UIButton!
     
     var topRecipe: Recipe = Recipe();
-    var selectRecipe: Recipe = Recipe();
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

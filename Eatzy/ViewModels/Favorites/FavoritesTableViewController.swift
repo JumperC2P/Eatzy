@@ -9,9 +9,7 @@ import UIKit
 
 class FavoritesTableViewController: UITableViewController, UISplitViewControllerDelegate, Storyboarded {
     weak var coordinator: FavoritesCoordinator?
-    
-    var selectedRecipe: Recipe = Recipe();
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
